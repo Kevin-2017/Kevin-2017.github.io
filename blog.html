@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-55V1E709SK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-55V1E709SK');
+  </script>
+
+  <!-- Materialize - Compiled and minified CSS-->
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css" />
+  <!-- Font Awesome Icon - CSS-->
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+  <!-- Prism.js for code highlighting -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" />
+  <!-- Custom Styles-->
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  
+  <title>Kevin Wang | Blog</title>
+  
+  <style>
+    .blog-header {
+      background: linear-gradient(135deg, #004d40 0%, #00695c 100%);
+      color: white;
+      padding: 80px 0 40px;
+      margin-bottom: 40px;
+    }
+    
+    .blog-nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0, 77, 64, 0.95);
+      backdrop-filter: blur(10px);
+      z-index: 1000;
+      padding: 15px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .blog-nav a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 25px;
+      transition: all 0.3s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+    
+    .blog-nav a:hover {
+      background: rgba(255, 255, 255, 0.1);
+      transform: translateY(-2px);
+    }
+    
+    .blog-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    
+    .blog-sidebar {
+      background: white;
+      border-radius: 8px;
+      padding: 30px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 100px;
+      height: fit-content;
+    }
+    
+    .blog-main {
+      background: white;
+      border-radius: 8px;
+      padding: 40px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      margin-bottom: 40px;
+    }
+    
+    .blog-post {
+      border-bottom: 1px solid #e0e0e0;
+      padding-bottom: 30px;
+      margin-bottom: 30px;
+    }
+    
+    .blog-post:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+    }
+    
+    .blog-post-title {
+      font-size: 2.2rem;
+      font-weight: 600;
+      color: #004d40;
+      margin-bottom: 15px;
+      line-height: 1.3;
+    }
+    
+    .blog-post-meta {
+      color: #666;
+      font-size: 0.9rem;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    
+    .blog-post-category {
+      background: #004d40;
+      color: white;
+      padding: 4px 12px;
+      border-radius: 15px;
+      font-size: 0.8rem;
+      font-weight: 500;
+    }
+    
+    .blog-post-excerpt {
+      color: #444;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+    
+    .blog-post-content {
+      color: #333;
+      line-height: 1.7;
+      font-size: 1.1rem;
+    }
+    
+    .blog-post-content h2 {
+      color: #004d40;
+      font-size: 1.8rem;
+      margin-top: 30px;
+      margin-bottom: 15px;
+    }
+    
+    .blog-post-content h3 {
+      color: #00695c;
+      font-size: 1.4rem;
+      margin-top: 25px;
+      margin-bottom: 12px;
+    }
+    
+    .blog-post-content code {
+      background: #f5f5f5;
+      padding: 2px 6px;
+      border-radius: 3px;
+      font-family: 'Courier New', monospace;
+    }
+    
+    .blog-post-content pre {
+      background: #2d3748;
+      color: #e2e8f0;
+      padding: 20px;
+      border-radius: 8px;
+      overflow-x: auto;
+      margin: 20px 0;
+    }
+    
+    .blog-post-content blockquote {
+      border-left: 4px solid #004d40;
+      padding-left: 20px;
+      margin: 20px 0;
+      font-style: italic;
+      color: #555;
+    }
+    
+    .read-more-btn {
+      background: #004d40;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 25px;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.3s ease;
+      font-weight: 500;
+    }
+    
+    .read-more-btn:hover {
+      background: #00695c;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 77, 64, 0.3);
+    }
+    
+    .category-filter {
+      margin-bottom: 20px;
+    }
+    
+    .category-filter .chip {
+      background: #f5f5f5;
+      margin: 5px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    
+    .category-filter .chip:hover,
+    .category-filter .chip.active {
+      background: #004d40;
+      color: white;
+    }
+    
+    .search-box {
+      margin-bottom: 30px;
+    }
+    
+    .search-box input {
+      border: 1px solid #ddd;
+      border-radius: 25px;
+      padding: 12px 20px;
+      width: 100%;
+      font-size: 1rem;
+    }
+    
+    .search-box input:focus {
+      border-color: #004d40;
+      outline: none;
+      box-shadow: 0 0 0 2px rgba(0, 77, 64, 0.1);
+    }
+    
+    .recent-posts {
+      margin-top: 30px;
+    }
+    
+    .recent-posts h4 {
+      color: #004d40;
+      margin-bottom: 20px;
+    }
+    
+    .recent-post-item {
+      padding: 15px 0;
+      border-bottom: 1px solid #eee;
+    }
+    
+    .recent-post-item:last-child {
+      border-bottom: none;
+    }
+    
+    .recent-post-item a {
+      color: #333;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    
+    .recent-post-item a:hover {
+      color: #004d40;
+    }
+    
+    .recent-post-date {
+      color: #666;
+      font-size: 0.8rem;
+      margin-top: 5px;
+    }
+    
+    @media (max-width: 992px) {
+      .blog-sidebar {
+        position: static;
+        margin-top: 30px;
+      }
+      
+      .blog-main {
+        padding: 30px 20px;
+      }
+      
+      .blog-post-title {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="blog-nav">
+    <div class="blog-container">
+      <a href="/" class="left">
+        <i class="fa fa-home"></i>
+        Back to Home
+      </a>
+      <a href="#" class="right" onclick="window.scrollTo(0,0)">
+        <i class="fa fa-arrow-up"></i>
+        Top
+      </a>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="blog-header">
+    <div class="blog-container">
+      <div class="center-align">
+        <h1 style="margin: 0; font-size: 3rem; font-weight: 300;">Kevin's Blog</h1>
+        <p style="font-size: 1.2rem; margin-top: 10px; opacity: 0.9;">
+          Thoughts on AI research, machine learning, and academic life
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="blog-container">
+    <div class="row">
+      <!-- Sidebar -->
+      <div class="col s12 m4 l3">
+        <div class="blog-sidebar">
+          <!-- Search -->
+          <div class="search-box">
+            <input type="text" id="search-input" placeholder="Search posts...">
+          </div>
+          
+          <!-- Categories -->
+          <div class="category-filter">
+            <h4 style="color: #004d40; margin-bottom: 15px;">Categories</h4>
+            <div class="chip active" data-category="all">All Posts</div>
+            <div class="chip" data-category="AI Research">AI Research</div>
+            <div class="chip" data-category="Computer Vision">Computer Vision</div>
+            <div class="chip" data-category="Academic Life">Academic Life</div>
+            <div class="chip" data-category="Programming">Programming</div>
+            <div class="chip" data-category="Research">Research</div>
+            <div class="chip" data-category="Conferences">Conferences</div>
+          </div>
+          
+          <!-- Recent Posts -->
+          <div class="recent-posts">
+            <h4>Recent Posts</h4>
+            <div class="center-align" style="padding: 20px 0; color: #666;">
+              <p style="font-size: 0.9rem;">No posts yet. Check back soon!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Blog Content -->
+      <div class="col s12 m8 l9">
+        <div class="blog-main">
+          <!-- Empty blog message -->
+          <div class="center-align" style="padding: 60px 20px; color: #666;">
+            <i class="fa fa-edit" style="font-size: 4rem; margin-bottom: 20px; color: #26a69a;"></i>
+            <h3 style="color: #004d40; margin-bottom: 15px;">Blog Coming Soon</h3>
+            <p style="font-size: 1.1rem; line-height: 1.6; max-width: 500px; margin: 0 auto;">
+              I'm currently working on some exciting content to share with you. 
+              Check back soon for insights on AI research, computer vision, and academic life.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer style="background: #004d40; color: white; padding: 40px 0; margin-top: 60px;">
+    <div class="blog-container">
+      <div class="center-align">
+        <p>&copy; 2024 Kevin Wang. All rights reserved.</p>
+        <div style="margin-top: 20px;">
+          <a href="/" style="color: white; margin: 0 10px;">Portfolio</a>
+          <a href="mailto:kevinwang.1839@gmail.com" style="color: white; margin: 0 10px;">Contact</a>
+          <a href="https://github.com/Kevin-2017" style="color: white; margin: 0 10px;">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-core.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/5.1.1/marked.min.js"></script>
+  
+  <script>
+    $(document).ready(function() {
+      // Track blog page visit
+      gtag('event', 'page_view', {
+        page_title: 'Blog Page',
+        page_location: window.location.href,
+        event_category: 'engagement',
+        event_label: 'blog_visit'
+      });
+      
+      // Track blog landing
+      gtag('event', 'blog_landing', {
+        event_category: 'engagement',
+        event_label: 'blog_page_load',
+        value: 1
+      });
+      
+      // Category filtering
+      $('.category-filter .chip').on('click', function() {
+        $('.category-filter .chip').removeClass('active');
+        $(this).addClass('active');
+        
+        const category = $(this).data('category');
+        
+        if (category === 'all') {
+          $('.blog-post').show();
+        } else {
+          $('.blog-post').hide();
+          $(`.blog-post[data-category="${category}"]`).show();
+        }
+        
+        // Analytics tracking
+        gtag('event', 'blog_filter', {
+          event_category: 'engagement',
+          event_label: category,
+          value: 1
+        });
+      });
+      
+      // Search functionality
+      $('#search-input').on('keyup', function() {
+        const searchTerm = $(this).val().toLowerCase();
+        
+        $('.blog-post').each(function() {
+          const postText = $(this).text().toLowerCase();
+          if (postText.includes(searchTerm)) {
+            $(this).show();
+          } else {
+            $(this).hide();
+          }
+        });
+      });
+      
+      // Smooth scrolling for anchor links
+      $('a[href^="#"]').on('click', function(e) {
+        e.preventDefault();
+        const target = $(this.getAttribute('href'));
+        if (target.length) {
+          $('html, body').animate({
+            scrollTop: target.offset().top - 100
+          }, 500);
+        }
+      });
+      
+      // Analytics tracking for blog interactions
+      $('.read-more-btn').on('click', function() {
+        const postTitle = $(this).closest('.blog-post').find('.blog-post-title').text();
+        gtag('event', 'blog_read_more', {
+          event_category: 'engagement',
+          event_label: postTitle,
+          value: 1
+        });
+      });
+      
+      // Track search usage
+      $('#search-input').on('search', function() {
+        const searchTerm = $(this).val();
+        if (searchTerm) {
+          gtag('event', 'blog_search', {
+            event_category: 'engagement',
+            event_label: searchTerm,
+            value: 1
+          });
+        }
+      });
+      
+      // Track navigation clicks
+      $('.blog-nav a').on('click', function() {
+        const linkText = $(this).text().trim();
+        gtag('event', 'blog_navigation', {
+          event_category: 'engagement',
+          event_label: linkText,
+          value: 1
+        });
+      });
+      
+      // Track footer link clicks
+      $('footer a').on('click', function() {
+        const linkText = $(this).text().trim();
+        gtag('event', 'blog_footer_click', {
+          event_category: 'engagement',
+          event_label: linkText,
+          value: 1
+        });
+      });
+    });
+  </script>
+</body>
+</html> 

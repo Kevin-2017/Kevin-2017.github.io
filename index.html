@@ -6,14 +6,15 @@
   <meta name="viewport" content="width=device-width initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-  <!-- Google Tag Manager -->
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-55V1E709SK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-PGZH8HT');</script>
-  <!-- End Google Tag Manager -->
+    gtag('config', 'G-55V1E709SK');
+  </script>
 
   <!-- Materialize - Compiled and minified CSS-->
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css" />
@@ -23,15 +24,7 @@
   <link rel="stylesheet" href="/assets/css/style.css" />
   <title>Kevin Wang | AI Researcher</title>
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-55V1E709SK"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
 
-    gtag('config', 'UA-126939217-2');
-  </script>
 
   <!-- Open Graph-->
   <meta property="og:locale" content="en_US" />
@@ -73,10 +66,7 @@
 </head>
 
 <body>
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PGZH8HT"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe>
-  </noscript>
+
   
   <!-- Navigation Menu-->
   <!-- Nav class 1 -->
@@ -136,6 +126,11 @@
       </li>
 
       <li class="bold">
+        <a aria-label="Navigate to the Blog page" href="/blog.html" class="waves-effect waves-dark teal-text"><i
+            class="mdi-action-description small"></i><span>Blog</span></a>
+      </li>
+
+      <li class="bold">
         <!--
         ICONS:
         1. mdi-action-description
@@ -157,21 +152,32 @@
   <nav class="hide-on-large only trigger z-depth-1">
     <a aria-label="Toggle visibility of the mobile navbar" href="#" data-activates="slide-out"
       class="button-collapse"><i class="mdi-navigation-menu"></i></a>
-    <div class="name-title">
-      <a id="name" aria-label="Navigate to the beginning of the page" href="#" class="teal-text">Kevin Wang</a><span class="black-text">AI Researcher</span>
+    <div class="mobile-nav-content">
+      <div class="mobile-avatar">
+        <img src="/assets/img/kevin.jpg" class="circle img-responsive profile-pic mobile-nav-pic" alt="avatar">
+      </div>
+      <div class="name-title">
+        <a id="name" aria-label="Navigate to the beginning of the page" href="#" class="teal-text">Kevin Wang</a><span class="black-text">AI Researcher</span>
+      </div>
     </div>
   </nav>
 
   <!-- Nav class 3 -->
   <nav class="hide-on-large only">
     <ul id="slide-out" class="side-nav">
+      <li class="logo mobile-logo">
+        <a id="mobile-logo-container" aria-label="Navigate to the beginning of the page" href="#intro"
+          class="brand-logo grey-blue-text">
+          <img src="/assets/img/kevin.jpg" class="circle img-responsive profile-pic mobile-profile-pic" alt="avatar">
+        </a>
+      </li>
       <li class="bold">
         <a aria-label="Navigate to the About section" href="#intro" class="waves-effect waves-dark teal-text"><i
             class="mdi-social-person small"></i><span>About</span></a>
       </li>
       <li class="bold">
         <a aria-label="Navigate to the Publications section" href="#publications" class="waves-effect waves-dark teal-text"><i
-            class="mdi-action-assessment small"></i><span>Publicaiton</span></a>
+            class="mdi-action-assessment small"></i><span>Publication</span></a>
       </li>
 
       <li class="bold">
@@ -194,6 +200,10 @@
             class="mdi-content-mail small"></i><span>Contact</span></a>
       </li>
       <li class="bold">
+        <a aria-label="Navigate to the Blog page" href="/blog.html" class="waves-effect waves-dark teal-text"><i
+            class="mdi-action-description small"></i><span>Blog</span></a>
+      </li>
+      <li class="bold">
         <a aria-label="Open Kevin's Resume in a new tab"
           href="https://drive.google.com/file/d/1zudziRXvxC3fXsPs_3bjnUTBkkXMz99X/view?usp=sharing" target="_blank"
           class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a>
@@ -207,53 +217,91 @@
     <section id="intro" class="section scrollspy full-height">
       <div class="overlay"></div>
       <div class="container">
-        <div class="col-md-9">
-          <div class="content section-padding valign" style="margin-left: 10%; margin-top: 50px;">
-            <div class="caption">
-              <h2>Hi, I'm <span class="teal">Kevin Wang</span></h2>
-              <h5 style="color:#fff">A <span class="typing" style="font-weight: 300; color:#004d40"></span></h5>
-              <!-- <h5 style="color:#00796b">A <span class="typing" style="font-weight: 300; color:#fff"></span></h5> -->
-              <h5>  I am a PhD student at Univeristy of Texas at Austin and would be advised by Prof.Atlas Wang at VITA group. 
-                I enjoy exploring the possibility of combining Vision and AI. 
-                At present, my focus is on the innovative fields of Creative Vision and 3D Representation. 
-                My passion lies in crafting interactive applications designed to tackle real-world challenges. </h5>
-              <h5>Contact me as we could explore the possibilities together!</h5>
+        <div class="row">
+          <div class="col s12 m10 l8 offset-l1">
+            <div class="hero-content">
+              <div class="hero-text">
+                <h1 class="hero-title">Hi, I'm <span class="teal">Kevin Wang</span></h1>
+                <h2 class="hero-subtitle">A <span class="typing" style="font-weight: 300; color:#ffffff"></span></h2>
+                <div class="hero-description">
+                  <p class="hero-intro">I am a PhD student at the University of Texas at Austin, advised by <a href="https://www.ece.utexas.edu/people/faculty/atlas-wang" target="_blank" class="cyan-link">Prof. Atlas Wang</a> at the <a href="https://www.vita-group.space/" target="_blank" class="cyan-link">VITA group</a>.</p>
+                  <p class="hero-research">I develop multi-agent LLM systems and LLM-driven planning frameworks that enable intelligent agent collaboration and strategic reasoning. My research advances AI agent communication, decision-making, and scalable multi-agent coordination.</p>
+                  <p class="hero-interests">I'm passionate about creating autonomous AI systems that can plan, communicate, and collaborate effectively with humans and other agents, integrating 3D vision capabilities for transformative real-world impact.</p>
+                  <!-- <p class="hero-passion">My passion lies in crafting interactive applications designed to tackle real-world challenges.</p> -->
+                  <p class="hero-cta">Contact me as we explore the possibilities together!</p>
+                </div>
+              </div>
+              <div class="hero-social">
+                <a href="https://www.linkedin.com/in/kevin-wang-01/" target="_blank" aria-label="LinkedIn">
+                  <button class="icon-btn linkedin">
+                    <i class="fa fa-linkedin"></i>
+                  </button>
+                </a>
+                <a href="https://github.com/Kevin-2017/" target="_blank" aria-label="GitHub">
+                  <button class="icon-btn github">
+                    <i class="fa fa-github"></i>
+                  </button>
+                </a>
+                <a href="https://scholar.google.com/citations?user=pncffqwAAAAJ" target="_blank" aria-label="Google Scholar">
+                  <button class="icon-btn scholar">
+                    <i class="fa fa-graduation-cap"></i>
+                  </button>
+                </a>
+                                 <a href="https://x.com/KevinWang_111" target="_blank" aria-label="X">
+                   <button class="icon-btn x-logo">
+                     <span class="x-icon">𝕏</span>
+                   </button>
+                 </a>
+              </div>
+              <div class="hero-buttons">
+                <a href="#publications" class="btn-hero primary">Read More</a>
+                <a href="#contact" class="btn-hero secondary">Contact Me</a>
+              </div>
             </div>
-            <div class="social">
-              <a href="https://www.linkedin.com/in/kevin-wang-01/" target="_blank">
-                <button class="icon-btn linkedin">
-                  <i class="fa fa-linkedin"></i>
-                </button>
-              </a>
-              <a href="https://github.com/Kevin-2017/" target="_blank">
-                <button class="icon-btn github">
-                  <i class="fa fa-github"></i>
-                </button>
-              </a>
-              <a href="https://scholar.google.com/citations?user=pncffqwAAAAJ" target="_blank">
-              <button class="icon-btn github">
-                  <i class="fa fa-graduation-cap"></i>
-              </button>
-              </a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-              <!-- <a href="https://angel.co/u/Kevin_bhogayata" target="_blank">
-                <button class="icon-btn angellist">
-                  <i class="fa fa-angellist"></i>
-                </button>
-              </a> -->
+    <!-- News Section -->
+    <section id="news" class="section scrollspy">
+      <h3 class="page-title white-text teal">Latest News</h3>
+      <div class="container">
+        <div class="news-box">
+          <div class="news-scroll-content">
+            
+            <!-- July 2025 News -->
+            <h4 class="news-period">July 2025</h4>
+            <ul class="news-list">
+              
+              <!-- News Item 1 -->
+              <li class="news-item">
+                <p>2 papers accepted to <b>COLM 2025</b>: <a href="https://spinbench.github.io/" target="_blank" class="teal-text hoverline">SPIN-Bench</a> and <a href="https://scalingwfm.github.io/" target="_blank" class="teal-text hoverline">SWIFT</a>.</p>
+              </li>
 
-              <!-- <a href="http://linkedin.com/in/Kevinbhogayata" target="_blank">
-                  <span class="fa-stack fa-lg">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+              <!-- News Item 2 -->
+              <li class="news-item">
+                <p>Leading organization of <a href="https://www.mindgamesarena.com/" target="_blank" class="teal-text hoverline">MindGames</a>, a <b>NeurIPS competition</b> for multi-agent LLM.</p>
+              </li>
 
-                  </span>
-              </a> -->
-            </div>
-            <div class='buttons'>
-              <a href="#publications" class="readme">Read More</a>
-              <a href="#contact" class="contactme">Contact Me</a>
-            </div>
+              <!-- News Item 3 -->
+              <li class="news-item">
+                <p>Portfolio redesigned with improved mobile responsiveness and enhanced user experience.</p>
+              </li>
+
+            </ul>
+            
+            <!-- June 2025 News -->
+            <h4 class="news-period">June 2025</h4>
+            <ul class="news-list">
+              
+              <!-- News Item 1 -->
+              <li class="news-item">
+                <p><a href="https://videolifter.github.io/" target="_blank" class="teal-text hoverline">VideoLifter</a> received the <strong>Best Paper Award</strong> at <b>CVPR 2025</b>'s <a href="#" target="_blank" class="teal-text hoverline">AI for Content Creation Workshop</a>.</p>
+              </li>
+
+            </ul>
+            
           </div>
         </div>
       </div>
@@ -287,34 +335,229 @@
     <section id="publications" class="section scrollspy">
       <h3 class="page-title white-text teal">Publications</h3>
       <div class="container">
-        * denotes equal contribution
-        <!-- Publication 1 -->
-        <div class="card">
-          <div class="card-content">
-            <div class="row">
-              <div class="col s12 m4">
-                <video autoplay muted loop src="./assets/video/garden_lighgaussian.mp4" title="LightGaussian video" class="responsive-video" preload="metadata"></video>
-              </div>
-              <div class="col s12 m8">
-                <p>
-                  <span class="card-title">
-                    <a href="https://lightgaussian.github.io/" class="teal-text hoverline">LightGaussian: Unbounded 3D Gaussian Compression with 15x Reduction and 200+ FPS  </a>
-                  </span>
-                </p>
-                <p><b>Authors:</b> <strong>Kevin Wang*</strong>,Zhiwen Fan*, Kairun Wen, Zehao Zhu, Dejia Xu, Zhangyang Wang
-                </p>
-                <p><b>Venue:</b> NeurIPS <span style="color: red;"> (Spotlight) </span></p>
+        <p style="margin-bottom: 30px; color: #666;">* denotes equal contribution</p>
+        
+        <!-- Publication Category Tabs -->
+        <div class="publication-tabs">
+          <ul class="tabs">
+            <li class="tab col s6"><a href="#reasoning-planning" class="active">AI Reasoning & Planning</a></li>
+            <li class="tab col s6"><a href="#computer-vision">3D Computer Vision</a></li>
+          </ul>
+        </div>
 
-                <p>
-                  <b>Links:</b>
-                  <a href="https://arxiv.org/abs/2311.17245">Paper</a> |
-                  <a href="https://lightgaussian.github.io/">Project</a> |
-                  <a href="https://github.com/VITA-Group/LightGaussian">Code</a>
-                </p>
+        <!-- AI Reasoning & Planning Publications -->
+        <div id="reasoning-planning" class="publication-category">
+          
+          <!-- SPIN-Bench -->
+          <div class="card">
+            <div class="card-content">
+              <div class="row">
+                <div class="col s12 m4">
+                  <img src="/assets/video/spin.gif" alt="SPIN-Bench" class="responsive-img">
+                </div>
+                <div class="col s12 m8">
+                  <p>
+                    <span class="card-title">
+                      <a href="https://spinbench.github.io/" class="teal-text hoverline">SPIN-Bench: How Well Do LLMs Plan Strategically and Reason Socially?</a>
+                    </span>
+                  </p>
+                  <p><b>Authors:</b> <strong>Kevin Wang*</strong>, Jianzhu Yao*, Ryan Hsieh, Haisu Zhou, Tianqing Zou, Zerui Cheng, Zhangyang Wang, Pramod Viswanath</p>
+                  <p><b>Venue:</b> COLM</p>
+                  <p>
+                    <b>Links:</b>
+                    <a href="https://arxiv.org/abs/2503.12349">Paper</a> |
+                    <a href="https://spinbench.github.io/">Project</a> |
+                    <a href="https://spinbench.github.io/">Code</a>
+                  </p>
+                </div>
               </div>
             </div>
           </div>
+
+          <!-- Can Test-Time Scaling Improve World Foundation Model? -->
+          <div class="card">
+            <div class="card-content">
+              <div class="row">
+                <div class="col s12 m4">
+                  <video autoplay muted loop src="/assets/video/swift.mp4" title="SWIFT video" class="responsive-video" preload="metadata"></video>
+                </div>
+                <div class="col s12 m8">
+                  <p>
+                    <span class="card-title">
+                      <a href="https://scalingwfm.github.io/" class="teal-text hoverline">SWIFT: Can Test-Time Scaling Improve World Foundation Model?</a>
+                    </span>
+                  </p>
+                  <p><b>Authors:</b> Wenyan Cong, Hanqing Zhu, Peihao Wang, Bangya Liu, Dejia Xu, <strong>Kevin Wang</strong>, David Z Pan, Yan Wang, Zhiwen Fan, Zhangyang Wang</p>
+                  <p><b>Venue:</b> COLM</p>
+                  <p>
+                    <b>Links:</b>
+                    <a href="https://arxiv.org/abs/2503.24320">Paper</a> |
+                    <a href="https://scalingwfm.github.io/">Project</a> |
+                    <a href="https://github.com/Mia-Cong/SWIFT">Code</a>
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
+
+          <!-- OpenAI o1 Planning -->
+          <div class="card">
+            <div class="card-content">
+              <div class="row">
+                <div class="col s12 m4">
+                  <img src="/assets/img/o1_planning.png" alt="O1 Planning" class="responsive-img">
+                </div>
+                <div class="col s12 m8">
+                  <p>
+                    <span class="card-title">
+                      <a href="https://github.com/VITA-Group/o1-planning/tree/main" class="teal-text hoverline">On The Planning Abilities of OpenAI's o1 Models: Feasibility, Optimality, and Generalizability</a>
+                    </span>
+                  </p>
+                  <p><b>Authors:</b> <strong>Kevin Wang*</strong>, Junbo Li*, Neel P Bhatt, Yihan Xi, Qiang Liu, Ufuk Topcu, Zhangyang Wang</p>
+                  <p><b>Venue:</b> NeurIPS Workshop</p>
+                  <p>
+                    <b>Links:</b>
+                    <a href="https://arxiv.org/abs/2409.19924">Paper</a> |
+                    <a href="https://github.com/VITA-Group/o1-planning/tree/main">Code</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Symbolic Visual RL -->
+          <div class="card">
+            <div class="card-content">
+              <div class="row">
+                <div class="col s12 m4">
+                  <img src="/assets/img/symbolic_rl.png" alt="Symbolic RL" class="responsive-img">
+                </div>
+                <div class="col s12 m8">
+                  <p>
+                    <span class="card-title">
+                      <a href="https://github.com/VITA-Group/DiffSES" class="teal-text hoverline">Symbolic Visual Reinforcement Learning: A Scalable Framework with Object-Level Abstraction and Differentiable Expression Search</a>
+                    </span>
+                  </p>
+                  <p><b>Authors:</b> Wenqing Zheng*, S P Sharan*, Zhiwen Fan, <strong>Kevin Wang</strong>, Yihan Xi, Zhangyang Wang</p>
+                  <p><b>Venue:</b> PAMI</p>
+                  <p>
+                    <b>Links:</b>
+                    <a href="https://arxiv.org/abs/2212.14849">Paper</a> |
+                    <a href="https://github.com/VITA-Group/DiffSES">Code</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ChainCoder -->
+          <div class="card">
+            <div class="card-content">
+              <div class="row">
+                <div class="col s12 m4">
+                  <img src="/assets/img/code_coarse_to_fine.png" alt="ChainCoder" class="responsive-img">
+                </div>
+                <div class="col s12 m8">
+                  <p>
+                    <span class="card-title">
+                      <a href="https://github.com/VITA-Group/ChainCoder" class="teal-text hoverline">Outline, Then Details: Syntactically Guided Coarse-To-Fine Code Generation</a>
+                    </span>
+                  </p>
+                  <p><b>Authors:</b> Wenqing Zheng, S P Sharan, Ajay Jaiswal, <strong>Kevin Wang</strong>, Yihan Xi, Dejia Xu, Zhangyang Wang</p>
+                  <p><b>Venue:</b> ICML</p>
+                  <p>
+                    <b>Links:</b>
+                    <a href="https://arxiv.org/abs/2305.00909">Paper</a> |
+                    <a href="https://github.com/VITA-Group/ChainCoder">Code</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3D Computer Vision Publications -->
+        <div id="computer-vision" class="publication-category" style="display: none;">
+          
+          <!-- VideoLifter -->
+          <div class="card">
+            <div class="card-content">
+              <div class="row">
+                <div class="col s12 m4">
+                  <img src="/assets/img/videolifter.png" alt="VideoLifter" class="responsive-img">
+                </div>
+                <div class="col s12 m8">
+                  <p>
+                    <span class="card-title">
+                      <a href="https://videolifter.github.io/" class="teal-text hoverline">VideoLifter: Lifting Videos to 3D with Fast Hierarchical Stereo Alignment</a>
+                    </span>
+                  </p>
+                  <p><b>Authors:</b> Wenyan Cong, Hanqing Zhu, <strong>Kevin Wang</strong>, Jiahui Lei, Colton Stearns, Yuanhao Cai, Dilin Wang, Rakesh Ranjan, Matt Feiszli, Leonidas Guibas, Zhangyang Wang</p>
+                  <p><b>Venue:</b> CVPR 2025 AI4CC Workshop <span style="color: red;">(Best Paper Award)</span></p>
+                  <p>
+                    <b>Links:</b>
+                    <a href="https://arxiv.org/abs/2501.01949">Paper</a> |
+                    <a href="https://videolifter.github.io/">Project</a> |
+                    <a href="https://github.com/VITA-Group/VideoLifter">Code</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- FlexGS -->
+          <div class="card">
+            <div class="card-content">
+              <div class="row">
+                <div class="col s12 m4">
+                  <img src="/assets/img/spin.png" alt="FlexGS" class="responsive-img">
+                </div>
+                <div class="col s12 m8">
+                  <p>
+                    <span class="card-title">
+                      <a href="https://flexgs.github.io/" class="teal-text hoverline">FlexGS: Train Once, Deploy Everywhere with Many-in-One Flexible 3D Gaussian Splatting</a>
+                    </span>
+                  </p>
+                  <p><b>Authors:</b> Hengyu Liu, Yuehao Wang, Chenxin Li, Ruisi Cai, <strong>Kevin Wang</strong>, Wuyang Li, Pavlo Molchanov, Peihao Wang, Zhangyang Wang</p>
+                  <p><b>Venue:</b> CVPR 2025</p>
+                  <p>
+                    <b>Links:</b>
+                    <a href="https://arxiv.org/abs/2412.12944">Paper</a> |
+                    <a href="https://flexgs.github.io/">Project</a> |
+                    <a href="https://github.com/LiuHengyu321/FlexGS">Code</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- LightGaussian -->
+          <div class="card">
+            <div class="card-content">
+              <div class="row">
+                <div class="col s12 m4">
+                  <video autoplay muted loop src="./assets/video/garden_lighgaussian.mp4" title="LightGaussian video" class="responsive-video" preload="metadata"></video>
+                </div>
+                <div class="col s12 m8">
+                  <p>
+                    <span class="card-title">
+                      <a href="https://lightgaussian.github.io/" class="teal-text hoverline">LightGaussian: Unbounded 3D Gaussian Compression with 15x Reduction and 200+ FPS</a>
+                    </span>
+                  </p>
+                  <p><b>Authors:</b> <strong>Kevin Wang*</strong>, Zhiwen Fan*, Kairun Wen, Zehao Zhu, Dejia Xu, Zhangyang Wang</p>
+                  <p><b>Venue:</b> NeurIPS <span style="color: red;">(Spotlight)</span></p>
+                  <p>
+                    <b>Links:</b>
+                    <a href="https://arxiv.org/abs/2311.17245">Paper</a> |
+                    <a href="https://lightgaussian.github.io/">Project</a> |
+                    <a href="https://github.com/VITA-Group/LightGaussian">Code</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- InstantSplat -->
           <div class="card">
             <div class="card-content">
               <div class="row">
@@ -324,11 +567,10 @@
                 <div class="col s12 m8">
                   <p>
                     <span class="card-title">
-                      <a href="https://instantsplat.github.io/" class="teal-text hoverline">InstantSplat: Unbounded Sparse-view Pose-free Gaussian Splatting in 40 Seconds  </a>
+                      <a href="https://instantsplat.github.io/" class="teal-text hoverline">InstantSplat: Unbounded Sparse-view Pose-free Gaussian Splatting in 40 Seconds</a>
                     </span>
                   </p>
-                  <p><b>Authors:</b> Zhiwen Fan*, Wenyan Cong*, Kairun Wen*, <strong>Kevin Wang</strong> , Jian Zhang, Xinghao Ding, Danfei Xu, Boris Ivanovic, Marco Pavone, Georgios Pavlakos, Zhangyang Wang, Yue Wang
-                  </p>
+                  <p><b>Authors:</b> Zhiwen Fan*, Wenyan Cong*, Kairun Wen*, <strong>Kevin Wang</strong>, Jian Zhang, Xinghao Ding, Danfei Xu, Boris Ivanovic, Marco Pavone, Georgios Pavlakos, Zhangyang Wang, Yue Wang</p>
                   <p><b>Venue:</b> Preprint</p>
                   <p>
                     <b>Links:</b>
@@ -340,70 +582,9 @@
               </div>
             </div>
           </div>
-        <div class="card">
-          <div class="card-content">
-            <div class="row">
-              <div class="col s12 m4">
-                <img src="/assets/img/code_coarse_to_fine.png" title="ChainCoder video" class="responsive-img">
-                <!-- <video autoplay muted loop src="./assets/video/instantsplat.mp4" title="ChainCoder video" class="responsive-video" preload="metadata"></video> -->
-              </div>
-              <div class="col s12 m8">
-                <p>
-                  <span class="card-title">
-                    <a href="https://github.com/VITA-Group/ChainCoder" class="teal-text hoverline">Outline, Then Details: Syntactically Guided Coarse-To-Fine Code Generation
-                    </a>
-                  </span>
-                </p>
-                <p><b>Authors:</b> Wenqing Zheng, S P Sharan, Ajay Jaiswal, <strong>Kevin Wang</strong> , Yihan Xi, Dejia Xu, Zhangyang Wang
-                </p>
-                <p><b>Venue:</b> ICML</p>
-                <p>
-                  <b>Links:</b>
-                  <a href="https://arxiv.org/abs/2305.00909">Paper</a> |
-                  <!-- <a href="https://github.com/VITA-Group/ChainCoder">Project</a> | -->
-                  <a href="https://github.com/VITA-Group/ChainCoder">Code</a>
-                </p>
-              </div>
-            </div>
-          </div>
         </div>
-        <div class="card">
-          <div class="card-content">
-            <div class="row">
-              <div class="col s12 m4">
-                <img src="/assets/img/symbolic_rl.png" title="ChainCoder video" class="responsive-img">
-                <!-- <video autoplay muted loop src="./assets/video/instantsplat.mp4" title="ChainCoder video" class="responsive-video" preload="metadata"></video> -->
-              </div>
-              <div class="col s12 m8">
-                <p>
-                  <span class="card-title">
-                    <a href="https://github.com/VITA-Group/ChainCoder" class="teal-text hoverline">Symbolic Visual Reinforcement Learning: A Scalable Framework with Object-Level Abstraction and Differentiable Expression Search
-                    </a>
-                  </span>
-                </p>
-                <p><b>Authors:</b> Wenqing Zheng*, S P Sharan*, Zhiwen Fan, <strong>Kevin Wang</strong> , Yihan Xi, Zhangyang Wang
-                </p>
-                <p><b>Venue:</b>PAMI </p>
-                <p>
-                  <b>Links:</b>
-                  <a href="https://arxiv.org/abs/2212.14849">Paper</a> |
-                  <!-- <a href="https://github.com/VITA-Group/ChainCoder">Project</a> | -->
-                  <a href="https://github.com/VITA-Group/DiffSES">Code</a>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-  
-        
-        <!-- Publication 2 -->
-        <!-- Repeat the structure above for each publication, adjusting the src attribute of the video, the title, authors, venue, and links accordingly. -->
-    
-    
-    
-  </div>
-</section>
-
+      </div>
+    </section>
 
     <!-- Third Section: Experience -->
     <section id="experience" class="section scrollspy">
@@ -549,37 +730,86 @@
     </section>
 
     <!-- Eight Section: Contact -->
-    <section id="contact" class="section scrollspy full-height">
+    <section id="contact" class="section scrollspy">
       <h3 class="page-title white-text teal">Contact</h3>
       <div class="container">
-        <!-- <p>
-          <a aria-label="Call Kevin" data-position="top" data-tooltip="Call Kevin"
-            class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-phone"></i><a
-              aria-label="Call Kevin">+</a></a>
-        </p> -->
-        <p>
-          <a aria-label="Email Kevin" href="mailto:kevinwang.1839@gmail.com" target="_blank" data-position="top"
-            data-tooltip="Email Kevin" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-              class="fa fa-envelope"></i><a aria-label="Email Kevin" href="mailto:kevinwang.1839@gmail.com"
-              class="hoverline">kevinwang.1839@gmail.com</a></a>
-        </p>
-        <p>
-          <a aria-label="View Kevin on GitHub" href="" target="_blank"
-            data-position="top" data-tooltip="View Kevin on GitHub"
-            class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-github"></i><a
-              aria-label="Kevin on Github" href="https://github.com/Kevin-2017" class="hoverline"
-              target="_blank">github.com/Kevin-2017</a></a>
-        </p>
-        <p>
-          <a aria-label="View Kevin on LinkedIn" href="https://www.linkedin.com/in/kevin-wang-01/" target=""
-            data-position="top" data-tooltip="View Kevin on LinkedIn"
-            class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-              class="fa fa-linkedin"></i><a aria-label="Kevin on LinkedIn" href="https://www.linkedin.com/in/kevin-wang-01/"
-              class="hoverline" target="_blank">LinkedIn</a></a>
-        </p>
+        <div class="row">
+          <div class="col s12 m6 l6">
+            <div class="contact-content left-align">
+              <h5 class="contact-subtitle">Let's connect and explore opportunities together!</h5>
+              
+              <div class="contact-item">
+                <a aria-label="Email Kevin" href="mailto:kevinwang.1839@gmail.com" target="_blank" data-position="top"
+                  data-tooltip="Email Kevin" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped">
+                  <i class="fa fa-envelope"></i>
+                </a>
+                <div class="contact-info">
+                  <a aria-label="Email Kevin" href="mailto:kevinwang.1839@gmail.com" class="hoverline">
+                    kevinwang.1839@gmail.com
+                  </a>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <a aria-label="View Kevin on GitHub" href="https://github.com/Kevin-2017" target="_blank"
+                  data-position="top" data-tooltip="View Kevin on GitHub"
+                  class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped">
+                  <i class="fa fa-github"></i>
+                </a>
+                <div class="contact-info">
+                  <a aria-label="Kevin on Github" href="https://github.com/Kevin-2017" class="hoverline" target="_blank">
+                    github.com/Kevin-2017
+                  </a>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <a aria-label="View Kevin on LinkedIn" href="https://www.linkedin.com/in/kevin-wang-01/" target="_blank"
+                  data-position="top" data-tooltip="View Kevin on LinkedIn"
+                  class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped">
+                  <i class="fa fa-linkedin"></i>
+                </a>
+                <div class="contact-info">
+                  <a aria-label="Kevin on LinkedIn" href="https://www.linkedin.com/in/kevin-wang-01/" class="hoverline" target="_blank">
+                    LinkedIn Profile
+                  </a>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <a aria-label="View Kevin's Google Scholar" href="https://scholar.google.com/citations?user=pncffqwAAAAJ" target="_blank"
+                  data-position="top" data-tooltip="View Kevin's Publications"
+                  class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped">
+                  <i class="fa fa-graduation-cap"></i>
+                </a>
+                <div class="contact-info">
+                  <a aria-label="Kevin's Google Scholar" href="https://scholar.google.com/citations?user=pncffqwAAAAJ" class="hoverline" target="_blank">
+                    Google Scholar
+                  </a>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <a aria-label="Follow Kevin on X" href="https://x.com/KevinWang_111" target="_blank"
+                  data-position="top" data-tooltip="Follow Kevin on X"
+                  class="btn-floating btn-large waves-effect waves-light x-contact tooltipped">
+                  <span class="x-icon-contact">𝕏</span>
+                </a>
+                <div class="contact-info">
+                  <a aria-label="Kevin on X" href="https://x.com/KevinWang_111" class="hoverline" target="_blank">
+                    @KevinWang_111
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </main>
+
+
 
   <!-- typed.js -->
   <script src="assets/vendor/typed.js/typed.min.js"></script>
@@ -608,6 +838,70 @@
         edge: "left", // Choose the horizontal origin
         closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
       })
+      
+      // Publication tabs functionality
+      $('.publication-tabs .tab a').on('click', function(e) {
+        e.preventDefault();
+        
+        // Remove active class from all tabs
+        $('.publication-tabs .tab a').removeClass('active');
+        // Add active class to clicked tab
+        $(this).addClass('active');
+        
+        // Hide all publication categories
+        $('.publication-category').hide();
+        
+        // Show the selected category
+        var target = $(this).attr('href');
+        $(target).show();
+      });
+      
+      // Enhanced Google Analytics Tracking
+      // Track publication clicks
+      $('.publication-category .card-title a').on('click', function() {
+        gtag('event', 'publication_click', {
+          event_category: 'engagement',
+          event_label: $(this).text().trim(),
+          value: 1
+        });
+      });
+      
+      // Track resume downloads
+      $('a[href*="resume"], a[href*="cv"]').on('click', function() {
+        gtag('event', 'resume_download', {
+          event_category: 'engagement',
+          event_label: 'resume_pdf',
+          value: 1
+        });
+      });
+      
+      // Track social media clicks
+      $('.hero-social a, .social a, .contact-item a').on('click', function() {
+        var platform = '';
+        if ($(this).find('.fa-linkedin').length) platform = 'linkedin';
+        else if ($(this).find('.fa-github').length) platform = 'github';
+        else if ($(this).find('.fa-graduation-cap').length) platform = 'scholar';
+        else if ($(this).find('.x-icon, .x-icon-contact').length || $(this).hasClass('x-contact') || $(this).find('.x-logo').length) platform = 'x';
+        
+        gtag('event', 'social_click', {
+          event_category: 'engagement',
+          event_label: platform,
+          value: 1
+        });
+      });
+      
+      // Track news link clicks
+      $('.news-item a').on('click', function() {
+        var linkText = $(this).text().trim();
+        gtag('event', 'news_click', {
+          event_category: 'engagement',
+          event_label: linkText,
+          value: 1
+        });
+      });
+      
+
+
     })
   </script>
 </body>
