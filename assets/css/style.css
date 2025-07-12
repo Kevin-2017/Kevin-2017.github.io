@@ -1125,6 +1125,7 @@
 body {
   color: #333;
   font-size: 18px;
+  background-color: #f8f9fa;
 }
 
 /* body {
@@ -1199,7 +1200,7 @@ nav i {
 } */
 
 main {
-  background: url(../../assets/img/bg.png) repeat;
+  background: transparent;
   padding-left: 190px;
 }
 
@@ -1305,6 +1306,7 @@ h3 {
   padding-bottom: 30px;
   padding-top: 0;
   position: relative;
+  background-color: #f8f9fa;
 }
 
 #news.section {
