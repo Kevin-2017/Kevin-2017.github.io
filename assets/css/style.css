@@ -243,7 +243,7 @@
 }
 
 .hero-title {
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: 300;
   margin-bottom: 25px;
   color: white;
@@ -252,7 +252,7 @@
 }
 
 .hero-subtitle {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 300;
   margin-bottom: 35px;
   color: white;
@@ -265,7 +265,7 @@
 }
 
 .hero-description p {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   line-height: 1.7;
   margin-bottom: 18px;
   color: white;
@@ -275,12 +275,12 @@
 }
 
 .hero-description .hero-intro {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   font-weight: 400;
 }
 
 .hero-description .hero-interests {
-  font-size: 1.35rem;
+  font-size: 1.25rem;
   font-weight: 400;
   color: #e0f2f1;
 }
@@ -359,36 +359,21 @@
   }
   
   .hero-title {
-    font-size: 5rem;
+    font-size: 4rem;
   }
   
   .hero-subtitle {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   
   .hero-description p {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     max-width: 80%;
   }
 }
 
 /* Large Desktop (1920px) */
 @media (max-width: 1920px) and (min-width: 1681px) {
-  .hero-title {
-    font-size: 4.2rem;
-  }
-  
-  .hero-subtitle {
-    font-size: 2.1rem;
-  }
-  
-  .hero-description p {
-    font-size: 1.35rem;
-  }
-}
-
-/* Standard Desktop (1680px) */
-@media (max-width: 1680px) and (min-width: 1367px) {
   .hero-title {
     font-size: 3.8rem;
   }
@@ -402,10 +387,25 @@
   }
 }
 
+/* Standard Desktop (1680px) */
+@media (max-width: 1680px) and (min-width: 1367px) {
+  .hero-title {
+    font-size: 3.5rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.8rem;
+  }
+  
+  .hero-description p {
+    font-size: 1.2rem;
+  }
+}
+
 /* Medium Desktop (1366px) */
 @media (max-width: 1366px) and (min-width: 1201px) {
   .hero-title {
-    font-size: 3.4rem;
+    font-size: 3.2rem;
   }
   
   .hero-subtitle {
@@ -447,7 +447,7 @@
   }
   
   .hero-description p {
-    font-size: 1.05rem;
+    font-size: 1.1rem;
     max-width: 95%;
   }
 }
@@ -497,17 +497,17 @@
   }
   
   .hero-title {
-    font-size: 2.4rem;
+    font-size: 2.5rem;
     margin-bottom: 15px;
   }
   
   .hero-subtitle {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     margin-bottom: 25px;
   }
   
   .hero-description p {
-    font-size: 1rem;
+    font-size: 1.05rem;
     margin-bottom: 15px;
     line-height: 1.6;
   }
@@ -557,23 +557,23 @@
   }
   
   .hero-title {
-    font-size: 2rem;
+    font-size: 2.2rem;
     margin-bottom: 12px;
   }
   
   .hero-subtitle {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     margin-bottom: 20px;
   }
   
   .hero-description p {
-    font-size: 0.9rem;
+    font-size: 1rem;
     margin-bottom: 12px;
     line-height: 1.5;
   }
   
   .hero-description .hero-intro {
-    font-size: 1rem;
+    font-size: 1.05rem;
   }
   
   .hero-social {
@@ -620,19 +620,19 @@
   }
   
   .hero-title {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
   
   .hero-subtitle {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
   
   .hero-description p {
-    font-size: 0.85rem;
+    font-size: 0.95rem;
   }
   
   .hero-description .hero-intro {
-    font-size: 0.95rem;
+    font-size: 1rem;
   }
   
   .icon-btn {
