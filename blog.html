@@ -27,68 +27,38 @@
   
   <style>
     .blog-header {
-      background: linear-gradient(135deg, #004d40 0%, #00695c 100%);
-      color: white;
-      padding: 80px 0 40px;
-      margin-bottom: 40px;
-    }
-    
-    .blog-nav {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      background: rgba(0, 77, 64, 0.95);
-      backdrop-filter: blur(10px);
-      z-index: 1000;
-      padding: 15px 0;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    }
-    
-    .blog-nav a {
-      color: white;
-      text-decoration: none;
-      padding: 10px 20px;
-      border-radius: 25px;
-      transition: all 0.3s ease;
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-    }
-    
-    .blog-nav a:hover {
-      background: rgba(255, 255, 255, 0.1);
-      transform: translateY(-2px);
+      background: #f8f9fa;
+      color: #333;
+      padding: 60px 0 40px;
+      margin-bottom: 30px;
+      border-bottom: 1px solid #e9ecef;
     }
     
     .blog-container {
-      max-width: 1200px;
+      max-width: 800px;
       margin: 0 auto;
       padding: 0 20px;
     }
     
     .blog-sidebar {
       background: white;
-      border-radius: 8px;
-      padding: 30px;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-      position: sticky;
-      top: 100px;
-      height: fit-content;
+      border: 1px solid #e9ecef;
+      border-radius: 6px;
+      padding: 20px;
+      margin-bottom: 30px;
     }
     
     .blog-main {
       background: white;
-      border-radius: 8px;
-      padding: 40px;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-      margin-bottom: 40px;
+      border: 1px solid #e9ecef;
+      border-radius: 6px;
+      padding: 30px;
     }
     
     .blog-post {
-      border-bottom: 1px solid #e0e0e0;
-      padding-bottom: 30px;
-      margin-bottom: 30px;
+      border-bottom: 1px solid #e9ecef;
+      padding-bottom: 20px;
+      margin-bottom: 20px;
     }
     
     .blog-post:last-child {
@@ -97,148 +67,108 @@
     }
     
     .blog-post-title {
-      font-size: 2.2rem;
+      font-size: 1.8rem;
       font-weight: 600;
-      color: #004d40;
-      margin-bottom: 15px;
+      color: #333;
+      margin-bottom: 10px;
       line-height: 1.3;
     }
     
     .blog-post-meta {
-      color: #666;
+      color: #6c757d;
       font-size: 0.9rem;
-      margin-bottom: 20px;
+      margin-bottom: 15px;
       display: flex;
       align-items: center;
-      gap: 20px;
+      gap: 15px;
       flex-wrap: wrap;
     }
     
     .blog-post-category {
-      background: #004d40;
-      color: white;
-      padding: 4px 12px;
-      border-radius: 15px;
+      background: #e9ecef;
+      color: #495057;
+      padding: 2px 8px;
+      border-radius: 12px;
       font-size: 0.8rem;
-      font-weight: 500;
-    }
-    
-    .blog-post-excerpt {
-      color: #444;
-      line-height: 1.6;
-      margin-bottom: 20px;
     }
     
     .blog-post-content {
       color: #333;
-      line-height: 1.7;
-      font-size: 1.1rem;
+      line-height: 1.6;
+      font-size: 1rem;
     }
     
     .blog-post-content h2 {
-      color: #004d40;
-      font-size: 1.8rem;
-      margin-top: 30px;
-      margin-bottom: 15px;
+      color: #333;
+      font-size: 1.4rem;
+      margin-top: 25px;
+      margin-bottom: 10px;
     }
     
     .blog-post-content h3 {
-      color: #00695c;
-      font-size: 1.4rem;
-      margin-top: 25px;
-      margin-bottom: 12px;
+      color: #495057;
+      font-size: 1.2rem;
+      margin-top: 20px;
+      margin-bottom: 8px;
     }
     
     .blog-post-content code {
-      background: #f5f5f5;
-      padding: 2px 6px;
+      background: #f8f9fa;
+      padding: 1px 4px;
       border-radius: 3px;
       font-family: 'Courier New', monospace;
+      font-size: 0.9rem;
     }
     
     .blog-post-content pre {
-      background: #2d3748;
-      color: #e2e8f0;
-      padding: 20px;
-      border-radius: 8px;
+      background: #f8f9fa;
+      color: #333;
+      padding: 15px;
+      border-radius: 4px;
       overflow-x: auto;
-      margin: 20px 0;
+      margin: 15px 0;
+      border: 1px solid #e9ecef;
     }
     
     .blog-post-content blockquote {
-      border-left: 4px solid #004d40;
-      padding-left: 20px;
-      margin: 20px 0;
+      border-left: 3px solid #dee2e6;
+      padding-left: 15px;
+      margin: 15px 0;
       font-style: italic;
-      color: #555;
-    }
-    
-    .read-more-btn {
-      background: #004d40;
-      color: white;
-      padding: 10px 20px;
-      border-radius: 25px;
-      text-decoration: none;
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      transition: all 0.3s ease;
-      font-weight: 500;
-    }
-    
-    .read-more-btn:hover {
-      background: #00695c;
-      transform: translateY(-2px);
-      box-shadow: 0 4px 12px rgba(0, 77, 64, 0.3);
+      color: #6c757d;
     }
     
     .category-filter {
-      margin-bottom: 20px;
+      margin-bottom: 15px;
     }
     
     .category-filter .chip {
-      background: #f5f5f5;
-      margin: 5px;
+      background: #f8f9fa;
+      margin: 3px;
       cursor: pointer;
-      transition: all 0.3s ease;
+      transition: all 0.2s ease;
+      border: 1px solid #e9ecef;
     }
     
     .category-filter .chip:hover,
     .category-filter .chip.active {
-      background: #004d40;
+      background: #495057;
       color: white;
     }
     
-    .search-box {
-      margin-bottom: 30px;
-    }
-    
-    .search-box input {
-      border: 1px solid #ddd;
-      border-radius: 25px;
-      padding: 12px 20px;
-      width: 100%;
-      font-size: 1rem;
-    }
-    
-    .search-box input:focus {
-      border-color: #004d40;
-      outline: none;
-      box-shadow: 0 0 0 2px rgba(0, 77, 64, 0.1);
-    }
-    
     .recent-posts {
-      margin-top: 30px;
+      margin-top: 20px;
     }
     
     .recent-posts h4 {
-      color: #004d40;
-      margin-bottom: 20px;
+      color: #333;
+      margin-bottom: 15px;
+      font-size: 1.1rem;
     }
     
     .recent-post-item {
-      padding: 15px 0;
-      border-bottom: 1px solid #eee;
+      padding: 10px 0;
+      border-bottom: 1px solid #f1f3f4;
     }
     
     .recent-post-item:last-child {
@@ -252,54 +182,71 @@
     }
     
     .recent-post-item a:hover {
-      color: #004d40;
+      color: #495057;
     }
     
     .recent-post-date {
-      color: #666;
+      color: #6c757d;
       font-size: 0.8rem;
-      margin-top: 5px;
+      margin-top: 3px;
     }
     
-    @media (max-width: 992px) {
+    @media (max-width: 768px) {
       .blog-sidebar {
-        position: static;
-        margin-top: 30px;
+        margin-bottom: 20px;
       }
       
       .blog-main {
-        padding: 30px 20px;
+        padding: 20px;
       }
       
       .blog-post-title {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
+      }
+    }
+
+    /* Responsive fixes for navigation */
+    @media (max-width: 768px) {
+      .blog-nav .blog-container {
+        padding: 0 15px;
+      }
+      
+      .blog-nav a {
+        padding: 6px 8px;
+        font-size: 13px;
+        gap: 4px;
+      }
+      
+      .blog-nav a i {
+        font-size: 12px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .blog-nav .blog-container {
+        padding: 0 10px;
+      }
+      
+      .blog-nav a {
+        padding: 5px 6px;
+        font-size: 12px;
+      }
+      
+      .blog-nav a i {
+        font-size: 11px;
       }
     }
   </style>
 </head>
 
 <body>
-  <!-- Navigation -->
-  <nav class="blog-nav">
-    <div class="blog-container">
-      <a href="/" class="left">
-        <i class="fa fa-home"></i>
-        Back to Home
-      </a>
-      <a href="#" class="right" onclick="window.scrollTo(0,0)">
-        <i class="fa fa-arrow-up"></i>
-        Top
-      </a>
-    </div>
-  </nav>
-
   <!-- Header -->
   <header class="blog-header">
     <div class="blog-container">
       <div class="center-align">
-        <h1 style="margin: 0; font-size: 3rem; font-weight: 300;">Kevin's Blog</h1>
-        <p style="font-size: 1.2rem; margin-top: 10px; opacity: 0.9;">
-          Thoughts on AI research, machine learning, and academic life
+        <h1 style="margin: 0; font-size: 2.5rem; font-weight: 400;">Kevin's Blog</h1>
+        <p style="font-size: 1rem; margin-top: 8px; color: #6c757d;">
+          Thoughts on AI research and machine learning
         </p>
       </div>
     </div>
@@ -311,28 +258,20 @@
       <!-- Sidebar -->
       <div class="col s12 m4 l3">
         <div class="blog-sidebar">
-          <!-- Search -->
-          <div class="search-box">
-            <input type="text" id="search-input" placeholder="Search posts...">
-          </div>
-          
           <!-- Categories -->
           <div class="category-filter">
-            <h4 style="color: #004d40; margin-bottom: 15px;">Categories</h4>
+            <h4 style="color: #333; margin-bottom: 10px; font-size: 1rem;">Categories</h4>
             <div class="chip active" data-category="all">All Posts</div>
             <div class="chip" data-category="AI Research">AI Research</div>
-            <div class="chip" data-category="Computer Vision">Computer Vision</div>
-            <div class="chip" data-category="Academic Life">Academic Life</div>
-            <div class="chip" data-category="Programming">Programming</div>
-            <div class="chip" data-category="Research">Research</div>
-            <div class="chip" data-category="Conferences">Conferences</div>
+            <div class="chip" data-category="Life">Life</div>
           </div>
           
           <!-- Recent Posts -->
           <div class="recent-posts">
             <h4>Recent Posts</h4>
-            <div class="center-align" style="padding: 20px 0; color: #666;">
-              <p style="font-size: 0.9rem;">No posts yet. Check back soon!</p>
+            <div class="recent-post-item">
+              <a href="#llm-post">Letting Go of Labeled Data for LLMs</a>
+              <div class="recent-post-date">July 18, 2024</div>
             </div>
           </div>
         </div>
@@ -341,29 +280,53 @@
       <!-- Main Blog Content -->
       <div class="col s12 m8 l9">
         <div class="blog-main">
-          <!-- Empty blog message -->
-          <div class="center-align" style="padding: 60px 20px; color: #666;">
-            <i class="fa fa-edit" style="font-size: 4rem; margin-bottom: 20px; color: #26a69a;"></i>
-            <h3 style="color: #004d40; margin-bottom: 15px;">Blog Coming Soon</h3>
-            <p style="font-size: 1.1rem; line-height: 1.6; max-width: 500px; margin: 0 auto;">
-              I'm currently working on some exciting content to share with you. 
-              Check back soon for insights on AI research, computer vision, and academic life.
-            </p>
-          </div>
+          <!-- Blog Post -->
+          <article class="blog-post" data-category="AI Research">
+            <h1 class="blog-post-title">Letting Go of Labeled Data for LLMs: We No Longer Need Data for Post-Training LLMs, We Need Environment</h1>
+            
+            <div class="blog-post-meta">
+              <span><i class="fa fa-calendar"></i> July 18, 2024</span>
+              <span class="blog-post-category">AI Research</span>
+              <span><i class="fa fa-clock-o"></i> 5 min read</span>
+            </div>
+            
+            <div class="blog-post-content">
+              <blockquote>
+                "师傅领进门，修行在个人。"<br>
+                <em>The Master Leads You to the Door, the Rest is Up to You</em>
+              </blockquote>
+              
+              <p>The last few months, I've been working extensively with Large Language Models (LLMs) in game and reinforcement learning environments. This is a casual blog recording my current predictions about what's next in the AI landscape.</p>
+              
+              <p>Historically, reinforcement learning (RL) has thrived when there's a clear goal, such as DeepMind's AlphaGo conquering the game of Go. The objectives were straightforward: win the game, maximize the reward. But the current generation of LLMs, like Grok4, has hit a data wall, exhausting much of the available pretraining data. The next big leap isn't going to come from squeezing more juice out of existing datasets; it will emerge from LLMs learning to explore entirely on their own.</p>
+              
+              <p>Think about it this way. When you first start learning something, imitation works wonders. You copy your teacher, classmates, or heroes, gaining baseline competence. But eventually, to truly excel, you have to find your own path, exploring and learning directly from your own experiences, your own "on-policy" trajectories.</p>
+              
+              <p>Similarly, I believe the next major breakthrough for LLMs will come from self-directed exploration. Initially, we'll see this happen in structured game environments with clear, measurable objectives. These environments offer well-defined feedback, making it easier for models to refine their strategies. After mastering these structured games, the real excitement begins with LLMs stepping into complex, simulated worlds without explicit goals, guided solely by their internal signals.</p>
+              
+              <p>One significant hurdle today is long-term planning. Currently, LLMs excel at tasks with immediate rewards but struggle with scenarios requiring patience or strategic foresight. However, I'm confident we'll soon see significant advancements. Just as humans learn to plan ahead through trial and error, sometimes painfully, LLMs will develop similar foresight through improved internal reinforcement mechanisms.</p>
+              
+              <p>Speaking of pain, humans have a built-in learning mechanism, pain signals that instinctively teach us what to avoid or pursue. Interestingly, LLMs already experience a rudimentary form of "pain" through training losses and error signals. The next evolution involves refining these internal signals, allowing models to autonomously set their own goals, priorities, and strategies without external instruction.</p>
+              
+              <p>In the next year, we'll witness significant breakthroughs first in text-based game environments, quickly generalizing to realistic simulations. This progression will steadily blur the line between virtual and real-world capabilities.</p>
+              
+              <p>The future of LLMs isn't just about more data; it's about smarter, self-driven exploration. Welcome to the era of truly self-evolving Large Language Models.</p>
+            </div>
+          </article>
         </div>
       </div>
     </div>
   </main>
 
   <!-- Footer -->
-  <footer style="background: #004d40; color: white; padding: 40px 0; margin-top: 60px;">
+  <footer style="background: #f8f9fa; color: #6c757d; padding: 30px 0; margin-top: 40px; border-top: 1px solid #e9ecef;">
     <div class="blog-container">
       <div class="center-align">
-        <p>&copy; 2024 Kevin Wang. All rights reserved.</p>
-        <div style="margin-top: 20px;">
-          <a href="/" style="color: white; margin: 0 10px;">Portfolio</a>
-          <a href="mailto:kevinwang.1839@gmail.com" style="color: white; margin: 0 10px;">Contact</a>
-          <a href="https://github.com/Kevin-2017" style="color: white; margin: 0 10px;">GitHub</a>
+        <p>&copy; 2025 Kevin Wang</p>
+        <div style="margin-top: 15px;">
+          <a href="/" style="color: #6c757d; margin: 0 10px;">Portfolio</a>
+          <a href="mailto:kevinwang.1839@gmail.com" style="color: #6c757d; margin: 0 10px;">Contact</a>
+          <a href="https://github.com/Kevin-2017" style="color: #6c757d; margin: 0 10px;">GitHub</a>
         </div>
       </div>
     </div>

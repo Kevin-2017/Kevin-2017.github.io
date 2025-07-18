@@ -95,4 +95,4 @@ The blog tracks:
 - Search usage
 - Read more button clicks
 
-All analytics data is sent to Google Analytics (G-55V1E709SK). 
+All analytics data is sent to Google Analytics (G-F7YK4W65BJ). 
