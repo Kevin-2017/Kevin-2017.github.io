@@ -32,6 +32,12 @@
 </head>
 <body>
 
+<!-- Dark mode toggle -->
+<button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+  <span class="icon-moon">&#9790;</span>
+  <span class="icon-sun">&#9728;</span>
+</button>
+
 <div class="page-wrapper">
 
   <!-- ===== Profile ===== -->
@@ -413,6 +419,27 @@
       gtag('event', 'profile_link_click', { event_label: this.textContent.trim() });
     });
   });
+</script>
+
+<!-- Dark mode toggle -->
+<script>
+  (function() {
+    var toggle = document.getElementById('themeToggle');
+    var saved = localStorage.getItem('theme');
+    if (saved === 'dark') {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+    toggle.addEventListener('click', function() {
+      var isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+      if (isDark) {
+        document.documentElement.removeAttribute('data-theme');
+        localStorage.setItem('theme', 'light');
+      } else {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        localStorage.setItem('theme', 'dark');
+      }
+    });
+  })();
 </script>
 
 </body>
