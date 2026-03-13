@@ -1,910 +1,403 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- Acknowledge: This is base on the template by Varad Bhogayata. It looks awsome! -->
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width initial-scale=1" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kevin Wang - UT Austin</title>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-55V1E709SK"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-55V1E709SK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-55V1E709SK');
+  </script>
 
-  gtag('config', 'G-55V1E709SK');
-</script>
-
-
-  <!-- Materialize - Compiled and minified CSS-->
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css" />
-  <!-- Font Awesome Icon - CSS-->
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
-  <!-- Custom Styles-->
   <link rel="stylesheet" href="/assets/css/style.css" />
-  <title>Kevin Wang | AI Researcher</title>
 
-
-
-  <!-- Open Graph-->
-  <meta property="og:locale" content="en_US" />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Kevin Wang | AI Researcher" />
-  <meta property="og:description" content="AI Researcher" />
-  <meta property="og:url" content="https://Kevin-2017.github.io/" />
-  <meta property="og:site_name" content="Kevin Wang | AI Researcher" />
-  <meta property="article:publisher" content="https://Kevinbhogayata.github.io/" />
-  <meta property="og:image" content="https://Kevinbhogayata.github.io/examples/preview.JPG" />
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:site" content="@Kevin_bhogayata" />
-  <meta name="twitter:title" content="Coder | Technofreak | Explorer | Minimalist | Humane" />
-  <meta name="twitter:description" content="AI Researcher" />
-  <meta name="twitter:url" content="https://twitter.com/Kevin_bhogayata" />
-  <meta name="author" content="Kevin Wang" />
-  <meta name="description" content="AI Researcher with a passion for backend development and artificial intelligence." />
-  <link rel="apple-touch-icon" sizes="57x57" href="/assets/img/favicon/apple-icon-57x57.png" />
-  <link rel="apple-touch-icon" sizes="60x60" href="/assets/img/favicon/apple-icon-60x60.png" />
-  <link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicon/apple-icon-72x72.png" />
-  <link rel="apple-touch-icon" sizes="76x76" href="/assets/img/favicon/apple-icon-76x76.png" />
-  <link rel="apple-touch-icon" sizes="114x114" href="/assets/img/favicon/apple-icon-114x114.png" />
-  <link rel="apple-touch-icon" sizes="120x120" href="/assets/img/favicon/apple-icon-120x120.png" />
-  <link rel="apple-touch-icon" sizes="144x144" href="/assets/img/favicon/apple-icon-144x144.png" />
-  <link rel="apple-touch-icon" sizes="152x152" href="/assets/img/favicon/apple-icon-152x152.png" />
+  <!-- Favicons -->
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-icon-180x180.png" />
-  <link rel="icon" type="image/png" sizes="192x192" href="/assets/img/favicon/android-icon-192x192.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="96x96" href="/assets/img/favicon/favicon-96x96.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png" />
-  <link rel="manifest" href="/assets/img/favicon/manifest.json" />
-  <meta name="msapplication-TileColor" content="#ffffff" />
-  <meta name="msapplication-TileImage" content="/assets/img/favicon/ms-icon-144x144.png" />
-  <meta name="theme-color" content="#ffffff" />
+
+  <!-- SEO -->
+  <meta name="description" content="Kevin Wang - PhD student at UT Austin. Research on multi-agent LLM systems, planning, and 3D vision." />
+  <meta name="author" content="Kevin Wang" />
+  <meta property="og:title" content="Kevin Wang - UT Austin" />
+  <meta property="og:description" content="PhD student at UT Austin researching multi-agent LLM systems and 3D vision." />
+  <meta property="og:type" content="website" />
   <meta name="robots" content="index, follow" />
-  <!-- Google Site Verification for indexing -->
   <meta name="google-site-verification" content="_qxK8tePiU2fhnwlwnJ7pkDFnj1k2EiKq_cYGy1Cb84" />
 </head>
-
 <body>
 
-  
-  <!-- Navigation Menu-->
-  <!-- Nav class 1 -->
-  <nav class="hide-on-small-only">
-    <ul class="side-nav fixed section table-of-contents">
+<div class="page-wrapper">
 
-      <li class="logo">
-        <a id="logo-container" aria-label="Navigate to the beginning of the page" href="#intro"
-          class="brand-logo grey-blue-text">
-          <img src="/assets/img/kevin.jpg" class="circle img-responsive profile-pic" alt="avatar">
-        </a>
-      </li>
-
-      <li class="bold">
-        <a aria-label="Navigate to the About section" href="#intro" class="waves-effect waves-dark teal-text"><i
-            class="mdi-social-person small"></i><span>About</span></a>
-      </li>
-
-
-      <!-- <li class="bold">
-        <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark teal-text"><i
-            class="mdi-av-my-library-books small"></i><span>Projects</span></a>
-      </li> -->
-
-      <li class="bold">
-        <!--
-        ICONS:
-        mdi-action-assessment
-        mdi-social-poll
-        mdi-av-equalizer
-        -->
-        <a aria-label="Navigate to the Publication section" href="#publications" class="waves-effect waves-dark teal-text"><i
-            class="mdi-action-assessment small"></i><span>Publication</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Experience section" href="#experience"
-          class="waves-effect waves-dark teal-text"><i
-            class="mdi-action-trending-up small"></i><span>Experience</span></a>
-      </li>
-      
-      <li class="bold">
-        <!--
-        ICONS:
-        -->
-        <a aria-label="Navigate to the Education section" href="#education" class="waves-effect waves-dark teal-text"><i
-            class="mdi-social-school small"></i><span>Education</span></a>
-      </li>
-
-      <li class="bold">
-        <!-- 
-        1. mdi-communication-contacts
-        2. mdi-content-mail
-        3. mdi-communication-email
-        -->
-        <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark teal-text"><i
-            class="mdi-content-mail small"></i><span>Contact</span></a>
-      </li>
-
-      <li class="bold">
-        <a aria-label="Navigate to the Blog page" href="/blog.html" class="waves-effect waves-dark teal-text"><i
-            class="mdi-action-description small"></i><span>Blog</span></a>
-      </li>
-
-      <li class="bold">
-        <!--
-        ICONS:
-        1. mdi-action-description
-        2. mdi-file-folder
-        3. mdi-file-folder-open
-        4. mdi-file-attachment
-        5. mdi-file-folder-shared
-        -->
-        <!-- <a aria-label="Open Kevin's resume in a new tab" href="#resume" target="_blank"
-          onclick="window.open('https://drive.google.com/file/d/1vYi-bMyIsZPve0x_clxY8xsDtiHiOMd3/view?usp=sharing')"
-          class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a> -->
-        <a aria-label="Open Kevin's resume in a new tab" href="https://drive.google.com/file/d/1zudziRXvxC3fXsPs_3bjnUTBkkXMz99X/view?usp=sharing"
-        class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a>  
-      </li>
-    </ul>
-  </nav>
-
-  <!-- Nav class 2 -->
-  <nav class="hide-on-large only trigger z-depth-1">
-    <a aria-label="Toggle visibility of the mobile navbar" href="#" data-activates="slide-out"
-      class="button-collapse"><i class="mdi-navigation-menu"></i></a>
-    <div class="mobile-nav-content">
-      <div class="mobile-avatar">
-        <img src="/assets/img/kevin.jpg" class="circle img-responsive profile-pic mobile-nav-pic" alt="avatar">
+  <!-- ===== Profile ===== -->
+  <header class="profile-section">
+    <img src="/assets/img/kevin.jpg" alt="Kevin Wang" class="profile-photo" />
+    <div class="profile-info">
+      <h1>Kevin Wang</h1>
+      <div class="profile-links">
+        <a href="mailto:kevinwang.1839@gmail.com">Email</a>
+        <a href="https://scholar.google.com/citations?user=pncffqwAAAAJ" target="_blank">Google Scholar</a>
+        <a href="https://github.com/Kevin-2017" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/kevin-wang-01/" target="_blank">LinkedIn</a>
+        <a href="https://x.com/KevinWang_111" target="_blank">Twitter/X</a>
+        <a href="https://drive.google.com/file/d/1zudziRXvxC3fXsPs_3bjnUTBkkXMz99X/view?usp=sharing" target="_blank">CV</a>
       </div>
-      <div class="name-title">
-        <a id="name" aria-label="Navigate to the beginning of the page" href="#" class="teal-text">Kevin Wang</a><span class="black-text">AI Researcher</span>
+      <div class="profile-bio">
+        <p>I am a PhD student at the University of Texas at Austin, advised by <a href="https://www.ece.utexas.edu/people/faculty/atlas-wang" target="_blank">Prof. Atlas Wang</a> in the <a href="https://www.vita-group.space/" target="_blank">VITA group</a>.</p>
+        <p>My research focuses on <strong>multi-agent LLM systems</strong>, <strong>LLM-driven planning</strong>, and <strong>3D computer vision</strong>. I build systems that enable intelligent agents to plan, communicate, and collaborate effectively under real-world constraints.</p>
       </div>
     </div>
-  </nav>
+  </header>
 
-  <!-- Nav class 3 -->
-  <nav class="hide-on-large only">
-    <ul id="slide-out" class="side-nav">
-      <li class="logo mobile-logo">
-        <a id="mobile-logo-container" aria-label="Navigate to the beginning of the page" href="#intro"
-          class="brand-logo grey-blue-text">
-          <img src="/assets/img/kevin.jpg" class="circle img-responsive profile-pic mobile-profile-pic" alt="avatar">
-        </a>
+  <!-- ===== News ===== -->
+  <section id="news">
+    <h2 class="section-title">News</h2>
+    <hr class="section-line" />
+    <ul class="news-list">
+      <li>
+        <span class="news-date">Mar 2026</span>
+        <span class="news-text">Selected as <a href="https://www.qualcomm.com/research/university-relations/innovation-fellowship/2026-north-america" target="_blank"><strong>Qualcomm Innovation Fellowship</strong></a> finalist.</span>
       </li>
-      <li class="bold">
-        <a aria-label="Navigate to the About section" href="#intro" class="waves-effect waves-dark teal-text"><i
-            class="mdi-social-person small"></i><span>About</span></a>
+      <li>
+        <span class="news-date">Feb 2026</span>
+        <span class="news-text"><a href="https://vlm-3r.github.io/" target="_blank">VLM-3R</a> accepted to <strong>CVPR 2026</strong>.</span>
       </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Publications section" href="#publications" class="waves-effect waves-dark teal-text"><i
-            class="mdi-action-assessment small"></i><span>Publication</span></a>
+      <li>
+        <span class="news-date">Jan 2026</span>
+        <span class="news-text"><a href="https://arxiv.org/abs/2601.12711" target="_blank">Neurosymbolic LoRA</a> accepted as <strong>Oral</strong> at <strong>AAAI 2026 NeusymBridge Workshop</strong>.</span>
       </li>
-
-      <li class="bold">
-        <a aria-label="Navigate to the Experience section" href="#experience"
-          class="waves-effect waves-dark teal-text"><i
-            class="mdi-action-trending-up small"></i><span>Experience</span></a>
+      <li>
+        <span class="news-date">Nov 2025</span>
+        <span class="news-text">Had a detour on a startup idea and interviewed at <strong>YC</strong> — a great short journey!</span>
       </li>
-      <!-- <li class="bold">
-        <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark teal-text"><i
-            class="mdi-av-my-library-books small"></i><span>Projects</span></a>
-      </li> -->
-     
-      <li class="bold">
-        <a aria-label="Navigate to the Education section" href="#education" class="waves-effect waves-dark teal-text"><i
-            class="mdi-social-school small"></i><span>Education</span></a>
+      <li>
+        <span class="news-date">Jul 2025</span>
+        <span class="news-text">2 papers accepted to <strong>COLM 2025</strong>: <a href="https://spinbench.github.io/" target="_blank">SPIN-Bench</a> and <a href="https://scalingwfm.github.io/" target="_blank">SWIFT</a>.</span>
       </li>
-      
-      <li class="bold">
-        <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark teal-text"><i
-            class="mdi-content-mail small"></i><span>Contact</span></a>
+      <li>
+        <span class="news-date">Jul 2025</span>
+        <span class="news-text">Leading organization of <a href="https://www.mindgamesarena.com/" target="_blank">MindGames</a>, a <strong>NeurIPS competition</strong> for multi-agent LLM.</span>
       </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Blog page" href="/blog.html" class="waves-effect waves-dark teal-text"><i
-            class="mdi-action-description small"></i><span>Blog</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Open Kevin's Resume in a new tab"
-          href="https://drive.google.com/file/d/1zudziRXvxC3fXsPs_3bjnUTBkkXMz99X/view?usp=sharing" target="_blank"
-          class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a>
+      <li>
+        <span class="news-date">Jun 2025</span>
+        <span class="news-text"><a href="https://videolifter.github.io/" target="_blank">VideoLifter</a> received <strong>Best Paper Award</strong> at CVPR 2025 AI4CC Workshop.</span>
       </li>
     </ul>
-  </nav>
+  </section>
 
-  <!-- Main Content-->
-  <main>
-    <!-- First Section: Heading lines and image -->
-    <section id="intro" class="section scrollspy full-height">
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col s12 m10 l8 offset-l1">
-            <div class="hero-content">
-              <div class="hero-text">
-                <h1 class="hero-title">Hi, I'm <span class="teal">Kevin Wang</span></h1>
-                <h2 class="hero-subtitle">A <span class="typing" style="font-weight: 300; color:#ffffff"></span></h2>
-                <div class="hero-description">
-                  <p class="hero-intro">I am a PhD student at the University of Texas at Austin, advised by <a href="https://www.ece.utexas.edu/people/faculty/atlas-wang" target="_blank" class="cyan-link">Prof. Atlas Wang</a> at the <a href="https://www.vita-group.space/" target="_blank" class="cyan-link">VITA group</a>.</p>
-                  <p class="hero-research">I develop multi-agent LLM systems and LLM-driven planning frameworks that enable intelligent agent collaboration and strategic reasoning. My research advances AI agent communication, decision-making, and scalable multi-agent coordination.</p>
-                  <p class="hero-interests">I am passionate about creating autonomous AI systems that can plan, communicate, and collaborate effectively with humans and other agents, integrating 3D vision capabilities for transformative real-world impact.</p>
-                  <!-- <p class="hero-passion">My passion lies in crafting interactive applications designed to tackle real-world challenges.</p> -->
-                  <p class="hero-cta">Contact me as we explore the possibilities together!</p>
-                </div>
-              </div>
-              <div class="hero-social">
-                <a href="https://www.linkedin.com/in/kevin-wang-01/" target="_blank" aria-label="LinkedIn">
-                  <button class="icon-btn linkedin">
-                    <i class="fa fa-linkedin"></i>
-                  </button>
-                </a>
-                <a href="https://github.com/Kevin-2017/" target="_blank" aria-label="GitHub">
-                  <button class="icon-btn github">
-                    <i class="fa fa-github"></i>
-                  </button>
-                </a>
-                <a href="https://scholar.google.com/citations?user=pncffqwAAAAJ" target="_blank" aria-label="Google Scholar">
-                  <button class="icon-btn scholar">
-                    <i class="fa fa-graduation-cap"></i>
-                  </button>
-                </a>
-                                 <a href="https://x.com/KevinWang_111" target="_blank" aria-label="X">
-                   <button class="icon-btn x-logo">
-                     <span class="x-icon">𝕏</span>
-                   </button>
-                 </a>
-              </div>
-              <div class="hero-buttons">
-                <a href="#publications" class="btn-hero primary">Read More</a>
-                <a href="#contact" class="btn-hero secondary">Contact Me</a>
-              </div>
+  <!-- ===== Selected Publications ===== -->
+  <section id="publications">
+    <h2 class="section-title">Selected Publications</h2>
+    <hr class="section-line" />
+    <p class="pub-note">* denotes equal contribution</p>
+
+    <table class="pub-list">
+      <tbody>
+
+        <!-- MEMO — Preprint -->
+        <tr>
+          <td class="pub-thumb-cell">
+            <img src="/assets/img/memo.png" alt="MEMO" />
+          </td>
+          <td class="pub-text-cell">
+            <div class="pub-title"><a href="https://yunfeixie233.github.io/MEMO/" target="_blank">MEMO: Memory-Augmented Model Context Optimization for Robust Multi-Turn Multi-Agent LLM Games</a></div>
+            <div class="pub-authors">Yunfei Xie, <strong>Kevin Wang</strong>, Bobby Cheng, Jianzhu Yao, Zhizhou Sha, Alexander Duffy, Yihan Xi, Hongyuan Mei, Cheston Tan, Chen Wei, Pramod Viswanath, Zhangyang Wang</div>
+            <div class="pub-venue">Preprint 2026</div>
+            <div class="pub-links">
+              <a href="https://arxiv.org/abs/2603.09022" target="_blank">paper</a>
+              <a href="https://yunfeixie233.github.io/MEMO/" target="_blank">project</a>
+              <a href="https://github.com/openverse-ai/MEMO" target="_blank">code</a>
             </div>
-          </div>
-        </div>
+          </td>
+        </tr>
+
+        <!-- VLM-3R — CVPR 2026 -->
+        <tr>
+          <td class="pub-thumb-cell">
+            <video autoplay muted loop playsinline preload="metadata" style="width:170px; border-radius:4px;">
+              <source src="/assets/video/vlm3r.mp4" type="video/mp4">
+            </video>
+          </td>
+          <td class="pub-text-cell">
+            <div class="pub-title"><a href="https://vlm-3r.github.io/" target="_blank">VLM-3R: Vision-Language Models Augmented with Instruction-Aligned 3D Reconstruction</a></div>
+            <div class="pub-authors">Zhiwen Fan, Jian Zhang, Renjie Li, Junge Zhang, Runjin Chen, Hezhen Hu, <strong>Kevin Wang</strong>, Peihao Wang, Huaizhi Qu, Shijie Zhou, Dilin Wang, Zhicheng Yan, Hongyu Xu, Justin Theiss, Tianlong Chen, Jiachen Li, Zhengzhong Tu, Zhangyang Wang, Rakesh Ranjan</div>
+            <div class="pub-venue">CVPR 2026</div>
+            <div class="pub-links">
+              <a href="https://arxiv.org/abs/2505.20279" target="_blank">paper</a>
+              <a href="https://vlm-3r.github.io/" target="_blank">project</a>
+              <a href="https://github.com/VITA-Group/VLM-3R" target="_blank">code</a>
+            </div>
+          </td>
+        </tr>
+
+        <!-- Neurosymbolic LoRA — AAAI 2026 NeusymBridge Workshop (Oral) -->
+        <tr>
+          <td class="pub-thumb-cell">
+            <img src="/assets/img/neuro_lora.png" alt="Neurosymbolic LoRA" />
+          </td>
+          <td class="pub-text-cell">
+            <div class="pub-title"><a href="https://arxiv.org/abs/2601.12711" target="_blank">Neurosymbolic LoRA: Why and When to Tune Weights vs. Rewrite Prompts</a></div>
+            <div class="pub-authors"><strong>Kevin Wang</strong>, Neel P Bhatt, Cong Liu, Junbo Li, Runjin Chen, Yihan Xi, Timothy Barclay, Alvaro Velasquez, Ufuk Topcu, Zhangyang Wang</div>
+            <div class="pub-venue">AAAI 2026 NeusymBridge Workshop <span class="award">(Oral)</span></div>
+            <div class="pub-links">
+              <a href="https://arxiv.org/abs/2601.12711" target="_blank">paper</a>
+            </div>
+          </td>
+        </tr>
+
+        <!-- SPIN-Bench — COLM 2025 -->
+        <tr>
+          <td class="pub-thumb-cell">
+            <img src="/assets/video/spin.gif" alt="SPIN-Bench" />
+          </td>
+          <td class="pub-text-cell">
+            <div class="pub-title"><a href="https://spinbench.github.io/" target="_blank">SPIN-Bench: How Well Do LLMs Plan Strategically and Reason Socially?</a></div>
+            <div class="pub-authors"><strong>Kevin Wang*</strong>, Jianzhu Yao*, Ryan Hsieh, Haisu Zhou, Tianqing Zou, Zerui Cheng, Zhangyang Wang, Pramod Viswanath</div>
+            <div class="pub-venue">COLM 2025</div>
+            <div class="pub-links">
+              <a href="https://arxiv.org/abs/2503.12349" target="_blank">paper</a>
+              <a href="https://spinbench.github.io/" target="_blank">project</a>
+              <a href="https://spinbench.github.io/" target="_blank">code</a>
+            </div>
+          </td>
+        </tr>
+
+        <!-- SWIFT — COLM 2025 -->
+        <tr>
+          <td class="pub-thumb-cell">
+            <video autoplay muted loop playsinline preload="metadata" style="width:170px; border-radius:4px;">
+              <source src="/assets/video/swift.mp4" type="video/mp4">
+            </video>
+          </td>
+          <td class="pub-text-cell">
+            <div class="pub-title"><a href="https://scalingwfm.github.io/" target="_blank">SWIFT: Can Test-Time Scaling Improve World Foundation Model?</a></div>
+            <div class="pub-authors">Wenyan Cong, Hanqing Zhu, Peihao Wang, Bangya Liu, Dejia Xu, <strong>Kevin Wang</strong>, David Z Pan, Yan Wang, Zhiwen Fan, Zhangyang Wang</div>
+            <div class="pub-venue">COLM 2025</div>
+            <div class="pub-links">
+              <a href="https://arxiv.org/abs/2503.24320" target="_blank">paper</a>
+              <a href="https://scalingwfm.github.io/" target="_blank">project</a>
+              <a href="https://github.com/Mia-Cong/SWIFT" target="_blank">code</a>
+            </div>
+          </td>
+        </tr>
+
+        <!-- VideoLifter — CVPR 2025 -->
+        <tr>
+          <td class="pub-thumb-cell">
+            <img src="/assets/img/videolifter.png" alt="VideoLifter" />
+          </td>
+          <td class="pub-text-cell">
+            <div class="pub-title"><a href="https://videolifter.github.io/" target="_blank">VideoLifter: Lifting Videos to 3D with Fast Hierarchical Stereo Alignment</a></div>
+            <div class="pub-authors">Wenyan Cong, Hanqing Zhu, <strong>Kevin Wang</strong>, Jiahui Lei, Colton Stearns, Yuanhao Cai, Dilin Wang, Rakesh Ranjan, Matt Feiszli, Leonidas Guibas, Zhangyang Wang</div>
+            <div class="pub-venue">CVPR 2025 AI4CC Workshop <span class="award">(Best Paper Award)</span></div>
+            <div class="pub-links">
+              <a href="https://arxiv.org/abs/2501.01949" target="_blank">paper</a>
+              <a href="https://videolifter.github.io/" target="_blank">project</a>
+              <a href="https://github.com/VITA-Group/VideoLifter" target="_blank">code</a>
+            </div>
+          </td>
+        </tr>
+
+        <!-- FlexGS — CVPR 2025 -->
+        <tr>
+          <td class="pub-thumb-cell">
+            <img src="/assets/img/flexgs.png" alt="FlexGS" />
+          </td>
+          <td class="pub-text-cell">
+            <div class="pub-title"><a href="https://flexgs.github.io/" target="_blank">FlexGS: Train Once, Deploy Everywhere with Many-in-One Flexible 3D Gaussian Splatting</a></div>
+            <div class="pub-authors">Hengyu Liu, Yuehao Wang, Chenxin Li, Ruisi Cai, <strong>Kevin Wang</strong>, Wuyang Li, Pavlo Molchanov, Peihao Wang, Zhangyang Wang</div>
+            <div class="pub-venue">CVPR 2025</div>
+            <div class="pub-links">
+              <a href="https://arxiv.org/abs/2412.12944" target="_blank">paper</a>
+              <a href="https://flexgs.github.io/" target="_blank">project</a>
+              <a href="https://github.com/LiuHengyu321/FlexGS" target="_blank">code</a>
+            </div>
+          </td>
+        </tr>
+
+        <!-- O1 Planning — NeurIPS 2024 Workshop -->
+        <tr>
+          <td class="pub-thumb-cell">
+            <img src="/assets/img/o1_planning.png" alt="O1 Planning" />
+          </td>
+          <td class="pub-text-cell">
+            <div class="pub-title"><a href="https://github.com/VITA-Group/o1-planning/tree/main" target="_blank">On The Planning Abilities of OpenAI's o1 Models: Feasibility, Optimality, and Generalizability</a></div>
+            <div class="pub-authors"><strong>Kevin Wang*</strong>, Junbo Li*, Neel P Bhatt, Yihan Xi, Qiang Liu, Ufuk Topcu, Zhangyang Wang</div>
+            <div class="pub-venue">NeurIPS 2024 Workshop on Language Gamification</div>
+            <div class="pub-links">
+              <a href="https://arxiv.org/abs/2409.19924" target="_blank">paper</a>
+              <a href="https://github.com/VITA-Group/o1-planning/tree/main" target="_blank">code</a>
+            </div>
+          </td>
+        </tr>
+
+        <!-- LightGaussian — NeurIPS 2024 Spotlight -->
+        <tr>
+          <td class="pub-thumb-cell">
+            <video autoplay muted loop playsinline preload="metadata" style="width:170px; border-radius:4px;">
+              <source src="/assets/video/garden_lighgaussian.mp4" type="video/mp4">
+            </video>
+          </td>
+          <td class="pub-text-cell">
+            <div class="pub-title"><a href="https://lightgaussian.github.io/" target="_blank">LightGaussian: Unbounded 3D Gaussian Compression with 15x Reduction and 200+ FPS</a></div>
+            <div class="pub-authors"><strong>Kevin Wang*</strong>, Zhiwen Fan*, Kairun Wen, Zehao Zhu, Dejia Xu, Zhangyang Wang</div>
+            <div class="pub-venue">NeurIPS 2024 <span class="award">(Spotlight)</span></div>
+            <div class="pub-links">
+              <a href="https://arxiv.org/abs/2311.17245" target="_blank">paper</a>
+              <a href="https://lightgaussian.github.io/" target="_blank">project</a>
+              <a href="https://github.com/VITA-Group/LightGaussian" target="_blank">code</a>
+            </div>
+          </td>
+        </tr>
+
+        <!-- Symbolic RL — TPAMI 2024 -->
+        <tr>
+          <td class="pub-thumb-cell">
+            <img src="/assets/img/symbolic_rl.png" alt="Symbolic RL" />
+          </td>
+          <td class="pub-text-cell">
+            <div class="pub-title"><a href="https://github.com/VITA-Group/DiffSES" target="_blank">Symbolic Visual Reinforcement Learning: A Scalable Framework with Object-Level Abstraction and Differentiable Expression Search</a></div>
+            <div class="pub-authors">Wenqing Zheng*, S P Sharan*, Zhiwen Fan, <strong>Kevin Wang</strong>, Yihan Xi, Zhangyang Wang</div>
+            <div class="pub-venue">IEEE TPAMI 2024</div>
+            <div class="pub-links">
+              <a href="https://arxiv.org/abs/2212.14849" target="_blank">paper</a>
+              <a href="https://github.com/VITA-Group/DiffSES" target="_blank">code</a>
+            </div>
+          </td>
+        </tr>
+
+        <!-- InstantSplat — Preprint -->
+        <tr>
+          <td class="pub-thumb-cell">
+            <video autoplay muted loop playsinline preload="metadata" style="width:170px; border-radius:4px;">
+              <source src="/assets/video/instantsplat.mp4" type="video/mp4">
+            </video>
+          </td>
+          <td class="pub-text-cell">
+            <div class="pub-title"><a href="https://instantsplat.github.io/" target="_blank">InstantSplat: Unbounded Sparse-view Pose-free Gaussian Splatting in 40 Seconds</a></div>
+            <div class="pub-authors">Zhiwen Fan*, Wenyan Cong*, Kairun Wen*, <strong>Kevin Wang</strong>, Jian Zhang, Xinghao Ding, Danfei Xu, Boris Ivanovic, Marco Pavone, Georgios Pavlakos, Zhangyang Wang, Yue Wang</div>
+            <div class="pub-venue">Preprint 2024</div>
+            <div class="pub-links">
+              <a href="https://arxiv.org/abs/2403.20309" target="_blank">paper</a>
+              <a href="https://instantsplat.github.io/" target="_blank">project</a>
+              <a href="https://github.com/NVlabs/InstantSplat" target="_blank">code</a>
+            </div>
+          </td>
+        </tr>
+
+        <!-- ChainCoder — ICML 2023 -->
+        <tr>
+          <td class="pub-thumb-cell">
+            <img src="/assets/img/code_coarse_to_fine.png" alt="ChainCoder" />
+          </td>
+          <td class="pub-text-cell">
+            <div class="pub-title"><a href="https://github.com/VITA-Group/ChainCoder" target="_blank">Outline, Then Details: Syntactically Guided Coarse-To-Fine Code Generation</a></div>
+            <div class="pub-authors">Wenqing Zheng, S P Sharan, Ajay Jaiswal, <strong>Kevin Wang</strong>, Yihan Xi, Dejia Xu, Zhangyang Wang</div>
+            <div class="pub-venue">ICML 2023</div>
+            <div class="pub-links">
+              <a href="https://arxiv.org/abs/2305.00909" target="_blank">paper</a>
+              <a href="https://github.com/VITA-Group/ChainCoder" target="_blank">code</a>
+            </div>
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
+  </section>
+
+  <!-- ===== Experience ===== -->
+  <section id="experience">
+    <h2 class="section-title">Experience</h2>
+    <hr class="section-line" />
+
+    <div class="exp-item">
+      <div class="exp-header">
+        <h3><a href="https://vita-group.github.io/" target="_blank">University of Texas at Austin</a></h3>
+        <span class="exp-date">Mar 2022 &ndash; Present</span>
       </div>
-    </section>
+      <div class="exp-role">Research Assistant, VITA Group</div>
+      <ul class="exp-details">
+        <li>3D Gaussian compression achieving 15x reduction (400+ GitHub stars, NeurIPS Spotlight)</li>
+        <li>Transformer-based language model for syntax error-free Python code generation (ICML)</li>
+        <li>Symbolic visual RL with neural-guided differentiable expression search (TPAMI)</li>
+      </ul>
+    </div>
 
-    <!-- News Section -->
-    <section id="news" class="section scrollspy">
-      <h3 class="page-title white-text teal">Latest News</h3>
-      <div class="container">
-        <div class="news-box">
-          <div class="news-scroll-content">
-            
-            <!-- July 2025 News -->
-            <h4 class="news-period">July 2025</h4>
-            <ul class="news-list">
-              
-              <!-- News Item 1 -->
-              <li class="news-item">
-                <p>2 papers accepted to <b>COLM 2025</b>: <a href="https://spinbench.github.io/" target="_blank" class="teal-text hoverline">SPIN-Bench</a> and <a href="https://scalingwfm.github.io/" target="_blank" class="teal-text hoverline">SWIFT</a>.</p>
-              </li>
-
-              <!-- News Item 2 -->
-              <li class="news-item">
-                <p>Leading organization of <a href="https://www.mindgamesarena.com/" target="_blank" class="teal-text hoverline">MindGames</a>, a <b>NeurIPS competition</b> for multi-agent LLM.</p>
-              </li>
-
-              <!-- News Item 3 -->
-              <li class="news-item">
-                <p>Portfolio redesigned with improved mobile responsiveness and enhanced user experience.</p>
-              </li>
-
-            </ul>
-            
-            <!-- June 2025 News -->
-            <h4 class="news-period">June 2025</h4>
-            <ul class="news-list">
-              
-              <!-- News Item 1 -->
-              <li class="news-item">
-                <p><a href="https://videolifter.github.io/" target="_blank" class="teal-text hoverline">VideoLifter</a> received the <strong>Best Paper Award</strong> at <b>CVPR 2025</b>'s <a href="#" target="_blank" class="teal-text hoverline">AI for Content Creation Workshop</a>.</p>
-              </li>
-
-            </ul>
-            
-          </div>
-        </div>
+    <div class="exp-item">
+      <div class="exp-header">
+        <h3><a href="https://www.sparkcognition.com/" target="_blank">SparkCognition</a></h3>
+        <span class="exp-date">Jun 2022 &ndash; Aug 2022</span>
       </div>
-    </section>
+      <div class="exp-role">Machine Learning Engineer Intern</div>
+      <ul class="exp-details">
+        <li>Dual-layer classification for malware detection; 95% precision on unseen malware</li>
+        <li>Feature pruning reduced runtime by 40%; Kubernetes training reduced time by 30%</li>
+      </ul>
+    </div>
+  </section>
 
-    <!-- Second Section: About -->
-    <!-- <section id="about" class="section scrollspy">
-      <h3 class="page-title white-text teal">About</h3>
-      <div class="container flow-text">
-        <p>
-          I am an incoming PHD at Univeristy of Texas at Austin and would be advised by Prof.Atlas Wang at VITA group. 
-          I enjoy exploring the possibility of combining Vision and AI. 
-          At present, my focus is on the innovative fields of Creative Vision and 3D Representation. 
-          My passion lies in crafting interactive applications designed to tackle real-world challenges. 
-        </p>
-        <p>
-          Contact me as we could explore the possibilities together!
-        </p>
-        <p>
-          <ul>
-            <li><b>Languages:</b> Python, C++, C, HTML/CSS, JavaScript, Java,  Bash</li>
-            <li><b>Frameworks:</b>PyTorch, TensorFlow, Flask, Node.js, </li>
-            <li><b>Tools & Technologies:</b> Git, Docker, AWS</li>
-          </ul>
-        </p>
+  <!-- ===== Education ===== -->
+  <section id="education">
+    <h2 class="section-title">Education</h2>
+    <hr class="section-line" />
 
-      </div> -->
-    </section>
-
-    <!-- Publications Section -->
-    <section id="publications" class="section scrollspy">
-      <h3 class="page-title white-text teal">Publications</h3>
-      <div class="container">
-        <p style="margin-bottom: 30px; color: #666;">* denotes equal contribution</p>
-        
-        <!-- Publication Category Tabs -->
-        <div class="publication-tabs">
-          <ul class="tabs">
-            <li class="tab col s6"><a href="#reasoning-planning" class="active">AI Reasoning & Planning</a></li>
-            <li class="tab col s6"><a href="#computer-vision">3D Computer Vision</a></li>
-          </ul>
-        </div>
-
-        <!-- AI Reasoning & Planning Publications -->
-        <div id="reasoning-planning" class="publication-category">
-          
-          <!-- SPIN-Bench -->
-          <div class="card">
-            <div class="card-content">
-              <div class="row">
-                <div class="col s12 m4">
-                  <img src="/assets/video/spin.gif" alt="SPIN-Bench" class="responsive-img">
-                </div>
-                <div class="col s12 m8">
-                  <p>
-                    <span class="card-title">
-                      <a href="https://spinbench.github.io/" class="teal-text hoverline">SPIN-Bench: How Well Do LLMs Plan Strategically and Reason Socially?</a>
-                    </span>
-                  </p>
-                  <p><b>Authors:</b> <strong>Kevin Wang*</strong>, Jianzhu Yao*, Ryan Hsieh, Haisu Zhou, Tianqing Zou, Zerui Cheng, Zhangyang Wang, Pramod Viswanath</p>
-                  <p><b>Venue:</b> COLM</p>
-                  <p>
-                    <b>Links:</b>
-                    <a href="https://arxiv.org/abs/2503.12349">Paper</a> |
-                    <a href="https://spinbench.github.io/">Project</a> |
-                    <a href="https://spinbench.github.io/">Code</a>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Can Test-Time Scaling Improve World Foundation Model? -->
-          <div class="card">
-            <div class="card-content">
-              <div class="row">
-                <div class="col s12 m4">
-                  <video autoplay muted loop src="/assets/video/swift.mp4" title="SWIFT video" class="responsive-video" preload="metadata"></video>
-                </div>
-                <div class="col s12 m8">
-                  <p>
-                    <span class="card-title">
-                      <a href="https://scalingwfm.github.io/" class="teal-text hoverline">SWIFT: Can Test-Time Scaling Improve World Foundation Model?</a>
-                    </span>
-                  </p>
-                  <p><b>Authors:</b> Wenyan Cong, Hanqing Zhu, Peihao Wang, Bangya Liu, Dejia Xu, <strong>Kevin Wang</strong>, David Z Pan, Yan Wang, Zhiwen Fan, Zhangyang Wang</p>
-                  <p><b>Venue:</b> COLM</p>
-                  <p>
-                    <b>Links:</b>
-                    <a href="https://arxiv.org/abs/2503.24320">Paper</a> |
-                    <a href="https://scalingwfm.github.io/">Project</a> |
-                    <a href="https://github.com/Mia-Cong/SWIFT">Code</a>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- OpenAI o1 Planning -->
-          <div class="card">
-            <div class="card-content">
-              <div class="row">
-                <div class="col s12 m4">
-                  <img src="/assets/img/o1_planning.png" alt="O1 Planning" class="responsive-img">
-                </div>
-                <div class="col s12 m8">
-                  <p>
-                    <span class="card-title">
-                      <a href="https://github.com/VITA-Group/o1-planning/tree/main" class="teal-text hoverline">On The Planning Abilities of OpenAI's o1 Models: Feasibility, Optimality, and Generalizability</a>
-                    </span>
-                  </p>
-                  <p><b>Authors:</b> <strong>Kevin Wang*</strong>, Junbo Li*, Neel P Bhatt, Yihan Xi, Qiang Liu, Ufuk Topcu, Zhangyang Wang</p>
-                  <p><b>Venue:</b> NeurIPS Workshop</p>
-                  <p>
-                    <b>Links:</b>
-                    <a href="https://arxiv.org/abs/2409.19924">Paper</a> |
-                    <a href="https://github.com/VITA-Group/o1-planning/tree/main">Code</a>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Symbolic Visual RL -->
-          <div class="card">
-            <div class="card-content">
-              <div class="row">
-                <div class="col s12 m4">
-                  <img src="/assets/img/symbolic_rl.png" alt="Symbolic RL" class="responsive-img">
-                </div>
-                <div class="col s12 m8">
-                  <p>
-                    <span class="card-title">
-                      <a href="https://github.com/VITA-Group/DiffSES" class="teal-text hoverline">Symbolic Visual Reinforcement Learning: A Scalable Framework with Object-Level Abstraction and Differentiable Expression Search</a>
-                    </span>
-                  </p>
-                  <p><b>Authors:</b> Wenqing Zheng*, S P Sharan*, Zhiwen Fan, <strong>Kevin Wang</strong>, Yihan Xi, Zhangyang Wang</p>
-                  <p><b>Venue:</b> PAMI</p>
-                  <p>
-                    <b>Links:</b>
-                    <a href="https://arxiv.org/abs/2212.14849">Paper</a> |
-                    <a href="https://github.com/VITA-Group/DiffSES">Code</a>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- ChainCoder -->
-          <div class="card">
-            <div class="card-content">
-              <div class="row">
-                <div class="col s12 m4">
-                  <img src="/assets/img/code_coarse_to_fine.png" alt="ChainCoder" class="responsive-img">
-                </div>
-                <div class="col s12 m8">
-                  <p>
-                    <span class="card-title">
-                      <a href="https://github.com/VITA-Group/ChainCoder" class="teal-text hoverline">Outline, Then Details: Syntactically Guided Coarse-To-Fine Code Generation</a>
-                    </span>
-                  </p>
-                  <p><b>Authors:</b> Wenqing Zheng, S P Sharan, Ajay Jaiswal, <strong>Kevin Wang</strong>, Yihan Xi, Dejia Xu, Zhangyang Wang</p>
-                  <p><b>Venue:</b> ICML</p>
-                  <p>
-                    <b>Links:</b>
-                    <a href="https://arxiv.org/abs/2305.00909">Paper</a> |
-                    <a href="https://github.com/VITA-Group/ChainCoder">Code</a>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- 3D Computer Vision Publications -->
-        <div id="computer-vision" class="publication-category" style="display: none;">
-          
-          <!-- VideoLifter -->
-          <div class="card">
-            <div class="card-content">
-              <div class="row">
-                <div class="col s12 m4">
-                  <img src="/assets/img/videolifter.png" alt="VideoLifter" class="responsive-img">
-                </div>
-                <div class="col s12 m8">
-                  <p>
-                    <span class="card-title">
-                      <a href="https://videolifter.github.io/" class="teal-text hoverline">VideoLifter: Lifting Videos to 3D with Fast Hierarchical Stereo Alignment</a>
-                    </span>
-                  </p>
-                  <p><b>Authors:</b> Wenyan Cong, Hanqing Zhu, <strong>Kevin Wang</strong>, Jiahui Lei, Colton Stearns, Yuanhao Cai, Dilin Wang, Rakesh Ranjan, Matt Feiszli, Leonidas Guibas, Zhangyang Wang</p>
-                  <p><b>Venue:</b> CVPR 2025 AI4CC Workshop <span style="color: red;">(Best Paper Award)</span></p>
-                  <p>
-                    <b>Links:</b>
-                    <a href="https://arxiv.org/abs/2501.01949">Paper</a> |
-                    <a href="https://videolifter.github.io/">Project</a> |
-                    <a href="https://github.com/VITA-Group/VideoLifter">Code</a>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- FlexGS -->
-          <div class="card">
-            <div class="card-content">
-              <div class="row">
-                <div class="col s12 m4">
-                  <img src="/assets/img/flexgs.png" alt="FlexGS" class="responsive-img">
-                </div>
-                <div class="col s12 m8">
-                  <p>
-                    <span class="card-title">
-                      <a href="https://flexgs.github.io/" class="teal-text hoverline">FlexGS: Train Once, Deploy Everywhere with Many-in-One Flexible 3D Gaussian Splatting</a>
-                    </span>
-                  </p>
-                  <p><b>Authors:</b> Hengyu Liu, Yuehao Wang, Chenxin Li, Ruisi Cai, <strong>Kevin Wang</strong>, Wuyang Li, Pavlo Molchanov, Peihao Wang, Zhangyang Wang</p>
-                  <p><b>Venue:</b> CVPR 2025</p>
-                  <p>
-                    <b>Links:</b>
-                    <a href="https://arxiv.org/abs/2412.12944">Paper</a> |
-                    <a href="https://flexgs.github.io/">Project</a> |
-                    <a href="https://github.com/LiuHengyu321/FlexGS">Code</a>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- LightGaussian -->
-          <div class="card">
-            <div class="card-content">
-              <div class="row">
-                <div class="col s12 m4">
-                  <video autoplay muted loop src="./assets/video/garden_lighgaussian.mp4" title="LightGaussian video" class="responsive-video" preload="metadata"></video>
-                </div>
-                <div class="col s12 m8">
-                  <p>
-                    <span class="card-title">
-                      <a href="https://lightgaussian.github.io/" class="teal-text hoverline">LightGaussian: Unbounded 3D Gaussian Compression with 15x Reduction and 200+ FPS</a>
-                    </span>
-                  </p>
-                  <p><b>Authors:</b> <strong>Kevin Wang*</strong>, Zhiwen Fan*, Kairun Wen, Zehao Zhu, Dejia Xu, Zhangyang Wang</p>
-                  <p><b>Venue:</b> NeurIPS <span style="color: red;">(Spotlight)</span></p>
-                  <p>
-                    <b>Links:</b>
-                    <a href="https://arxiv.org/abs/2311.17245">Paper</a> |
-                    <a href="https://lightgaussian.github.io/">Project</a> |
-                    <a href="https://github.com/VITA-Group/LightGaussian">Code</a>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- InstantSplat -->
-          <div class="card">
-            <div class="card-content">
-              <div class="row">
-                <div class="col s12 m4">
-                  <video autoplay muted loop src="./assets/video/instantsplat.mp4" title="InstantSplat video" class="responsive-video" preload="metadata"></video>
-                </div>
-                <div class="col s12 m8">
-                  <p>
-                    <span class="card-title">
-                      <a href="https://instantsplat.github.io/" class="teal-text hoverline">InstantSplat: Unbounded Sparse-view Pose-free Gaussian Splatting in 40 Seconds</a>
-                    </span>
-                  </p>
-                  <p><b>Authors:</b> Zhiwen Fan*, Wenyan Cong*, Kairun Wen*, <strong>Kevin Wang</strong>, Jian Zhang, Xinghao Ding, Danfei Xu, Boris Ivanovic, Marco Pavone, Georgios Pavlakos, Zhangyang Wang, Yue Wang</p>
-                  <p><b>Venue:</b> Preprint</p>
-                  <p>
-                    <b>Links:</b>
-                    <a href="https://arxiv.org/abs/2403.20309">Paper</a> |
-                    <a href="https://instantsplat.github.io/">Project</a> |
-                    <a href="https://github.com/NVlabs/InstantSplat">Code</a>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+    <div class="edu-item">
+      <div class="edu-header">
+        <h3>University of Texas at Austin</h3>
+        <span class="edu-date">2022 &ndash; Present</span>
       </div>
-    </section>
+      <div class="edu-desc">Ph.D. in Electrical &amp; Computer Engineering, advised by <a href="https://www.ece.utexas.edu/people/faculty/atlas-wang" target="_blank">Prof. Atlas Wang</a></div>
+    </div>
 
-    <!-- Third Section: Experience -->
-    <section id="experience" class="section scrollspy">
-      <h3 class="page-title white-text teal">Experience</h3>
-      <div class="container">
-
-        <!-- Latest Experience -->
-        <div class="card">
-          <div class="card-content">
-            <div class="row">
-              <div class="col s12 m2">
-                <a href="https://vita-group.github.io/" target="_blank"><img alt="UT logo"
-                    src="/assets/img/ut_log.png" class="responsive-img center-block" /></a>
-              </div>
-              <!-- <div class="col s12 m10"> -->
-              <div class="col s12 m10">
-                <p>
-                  <span class="card-title"><a href="https://vita-group.github.io/" target="_blank"
-                      class="teal-text hoverline">University of Texas at Austin</a></span>
-                </p>
-              </div>
-            </div>
-            <div class="role brown-text text-darken-2">Resarch Assistant</div>
-            <ul>
-              <li>
-                Proposed and implemented an architecture that compressed 3D reconstruction scenes by 15 times compared to the 3D Gaussian model through pruning, distillation, and quantization (400+ stars on github, under CVPR Review)
-              </li>
-              <li>
-                Implemented a transformer-based language model that produces syntax error-free python codes, and reaches a state-of-the-art performance with significantly fewer parameters. This work was published at ICML
-              </li>
-              <li>Built an innovative algorithm for extracting symbolic representations from visual RL (paper, TPAMI minor）
-                Conceived and implemented the neural guided searching algorithm that is partially differentiable, resulting in increasing scalability of symbolic RL 
-            
-              </li>
-              <li>
-                <b>Tools:</b> Pytorch, OpenCv
-              </li>
-            </ul>
-          </div>
-          <div class="card-action">
-            <span>March 2022 - Present | Austin, Texas</span>
-          </div>
-        </div>
-
-
-        <div class="card">
-          <div class="card-content">
-            <div class="row">
-              <div class="col s12 m2">
-                <a href="https://www.sparkcognition.com/" target="_blank"><img alt="Sparkcognition logo"
-                    src="/assets/img/sparkcognition.webp" class="responsive-img center-block" /></a>
-              </div>
-              <!-- <div class="col s12 m10"> -->
-              <div class="col s12 m10">
-                <p>
-                  <span class="card-title"><a href="https://www.sparkcognition.com/" target="_blank"
-                      class="teal-text hoverline">Sparkconition</a></span>
-                </p>
-              </div>
-            </div>
-            <div class="role brown-text text-darken-2">Machine Learning Engineer</div>
-            <ul>
-              <li>
-                Enhanced SparkCognition malware detection with dual-layer classification models, using static models for targeted file types and a dynamic model to catch data misclassified by static models.
-              </li>
-              <li>
-                Static models: Conducted feature contribution analysis in existing static ML models by pruning noisy features, empirically adding novel features, resulting in runtime reduced by 40%.
-                 Leveraged Kubernetes for efficient build and distributive training, reducing training time for static model by 30%.
-              </li>
-              <li>Dynamic model: Developed a novel dynamic ML model in Python using LightGBM and translated it to C\# production code, achieving 95\% precision in detecting unseen malware.
-              </li>
-              <li>
-                <b>Tools:</b> Python, C#, .Net, Kubernetes
-              </li>
-            </ul>
-          </div>
-          <div class="card-action">
-            <span>June 2022 - Aug 2022 | Austin, Texas</span>
-          </div>
-        </div>
-
-        
-
+    <div class="edu-item">
+      <div class="edu-header">
+        <h3>University of Texas at Austin</h3>
+        <span class="edu-date">2018 &ndash; 2022</span>
       </div>
-    </section>
+      <div class="edu-desc">B.S. in Computer Science &amp; B.S. in Mathematics &nbsp;|&nbsp; GPA: 3.78/4.0</div>
+    </div>
+  </section>
 
+  <!-- ===== Services ===== -->
+  <section id="services">
+    <h2 class="section-title">Services</h2>
+    <hr class="section-line" />
+    <ul class="service-list">
+      <li>Competition Organizer: <a href="https://www.mindgamesarena.com/" target="_blank">MindGames</a> (NeurIPS 2025)</li>
+    </ul>
+  </section>
 
-    <!-- Seventh Section: Education -->
-    <section id="education" class="section scrollspy">
-      <h3 class="page-title white-text teal">Education</h3>
-      <div class="container">
-        <div class="row">
-          <!-- Education -->
-          <div class="col s12 m6 l6">
-            <div class="card">
-              <div class="card-content">
-                <p>
-                  <span class="card-title"><a href="https://www.asu.edu/" target="_blank" class="teal-text hoverline">University of Texas at Austin</a></span>
-                </p>
-                <p class="brown-text">Austin, USA</p>
-                <p>
-                  <b>Degree: </b>Ph.D. candidate in Electrical Computer Engineering advised by <a href="https://www.ece.utexas.edu/people/faculty/atlas-wang" text-transform: none>Prof. Atlas Wang</a>
-                  <br>
-                  <!-- <b>GPA: </b>N/A/4.0 -->
-                </p>
+  <!-- ===== Visitor Tracking (hidden — view stats at https://mapmyvisitors.com/web/1c37e) ===== -->
+  <div style="display:none;">
+    <script type="text/javascript" id="mapmyvisitors"
+      src="//mapmyvisitors.com/map.js?d=qqzzdkSpBh5yiae_-juKRvs7alz_yhV796nwOO0gk2o&cl=ffffff&w=a"></script>
+  </div>
 
-                
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    &copy; 2025 Kevin Wang &nbsp;|&nbsp; Last updated March 2026
+  </footer>
 
-                </ul>
-              </div>
-            </div>
-        </div>
-           
-          <div class="col s12 m6 l6">
-            <div class="card">
-              <div class="card-content">
-                <p>
-                  <span class="card-title"><a href="https://www.asu.edu/" target="_blank" class="teal-text hoverline">University of Texas at Austin</a></span>
-                </p>
-                <p class="brown-text">Austin, USA</p>
-                <p>
-                  <b>Degree: </b>Bachelor of Science in Computer Science and Bachelor of Science in Mathmatics
-                  <br>
-                  <b>GPA: </b>3.78/4.0
-                </p>
+</div>
 
-                <ul>
-                  <p>
-                    <b>Relevant Courseworks:</b>
-                  <ul>
-                    <li>Computer Vision</li>
-                    <li>Machine Learning</li>
-                    <li>Reinforcement Learning</li>                    
-                  </ul>
-                  </p>
-
-                </ul>
-              </div>
-            </div>
-          </div>
-        
-      </div>
-    </section>
-
-    <!-- Eight Section: Contact -->
-    <section id="contact" class="section scrollspy">
-      <h3 class="page-title white-text teal">Contact</h3>
-      <div class="container">
-        <div class="row">
-          <div class="col s12 m6 l6">
-            <div class="contact-content left-align">
-              <h5 class="contact-subtitle">Let's connect and explore opportunities together!</h5>
-              
-              <div class="contact-item">
-                <a aria-label="Email Kevin" href="mailto:kevinwang.1839@gmail.com" target="_blank" data-position="top"
-                  data-tooltip="Email Kevin" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped">
-                  <i class="fa fa-envelope"></i>
-                </a>
-                <div class="contact-info">
-                  <a aria-label="Email Kevin" href="mailto:kevinwang.1839@gmail.com" class="hoverline">
-                    kevinwang.1839@gmail.com
-                  </a>
-                </div>
-              </div>
-
-              <div class="contact-item">
-                <a aria-label="View Kevin on GitHub" href="https://github.com/Kevin-2017" target="_blank"
-                  data-position="top" data-tooltip="View Kevin on GitHub"
-                  class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped">
-                  <i class="fa fa-github"></i>
-                </a>
-                <div class="contact-info">
-                  <a aria-label="Kevin on Github" href="https://github.com/Kevin-2017" class="hoverline" target="_blank">
-                    github.com/Kevin-2017
-                  </a>
-                </div>
-              </div>
-
-              <div class="contact-item">
-                <a aria-label="View Kevin on LinkedIn" href="https://www.linkedin.com/in/kevin-wang-01/" target="_blank"
-                  data-position="top" data-tooltip="View Kevin on LinkedIn"
-                  class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped">
-                  <i class="fa fa-linkedin"></i>
-                </a>
-                <div class="contact-info">
-                  <a aria-label="Kevin on LinkedIn" href="https://www.linkedin.com/in/kevin-wang-01/" class="hoverline" target="_blank">
-                    LinkedIn Profile
-                  </a>
-                </div>
-              </div>
-
-              <div class="contact-item">
-                <a aria-label="View Kevin's Google Scholar" href="https://scholar.google.com/citations?user=pncffqwAAAAJ" target="_blank"
-                  data-position="top" data-tooltip="View Kevin's Publications"
-                  class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped">
-                  <i class="fa fa-graduation-cap"></i>
-                </a>
-                <div class="contact-info">
-                  <a aria-label="Kevin's Google Scholar" href="https://scholar.google.com/citations?user=pncffqwAAAAJ" class="hoverline" target="_blank">
-                    Google Scholar
-                  </a>
-                </div>
-              </div>
-
-              <div class="contact-item">
-                <a aria-label="Follow Kevin on X" href="https://x.com/KevinWang_111" target="_blank"
-                  data-position="top" data-tooltip="Follow Kevin on X"
-                  class="btn-floating btn-large waves-effect waves-light x-contact tooltipped">
-                  <span class="x-icon-contact">𝕏</span>
-                </a>
-                <div class="contact-info">
-                  <a aria-label="Kevin on X" href="https://x.com/KevinWang_111" class="hoverline" target="_blank">
-                    @KevinWang_111
-                  </a>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-
-
-  <!-- typed.js -->
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
-  <script type="text/javascript">
-    var typed = new Typed('.typing',{
-      strings: ["Researcher", "Photographer", ],
-      loop: true,
-      typeSpeed: 80,
-      backSpeed: 40
+<!-- GA tracking -->
+<script>
+  document.querySelectorAll('.pub-title a').forEach(function(a) {
+    a.addEventListener('click', function() {
+      gtag('event', 'publication_click', { event_label: this.textContent.trim() });
     });
-  </script>
+  });
+  document.querySelectorAll('.profile-links a').forEach(function(a) {
+    a.addEventListener('click', function() {
+      gtag('event', 'profile_link_click', { event_label: this.textContent.trim() });
+    });
+  });
+</script>
 
-
-  <!-- jQuery-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-
-  <!-- Materialize - Compiled and minified JavaScript-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
-  <script>
-    // Materialize - Initializers
-    $(document).ready(function () {
-      $(".scrollspy").scrollSpy()
-      // Initialize collapse button
-      $(".button-collapse").sideNav({
-        menuWidth: 190, // Default is 240
-        edge: "left", // Choose the horizontal origin
-        closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
-      })
-      
-      // Publication tabs functionality
-      $('.publication-tabs .tab a').on('click', function(e) {
-        e.preventDefault();
-        
-        // Remove active class from all tabs
-        $('.publication-tabs .tab a').removeClass('active');
-        // Add active class to clicked tab
-        $(this).addClass('active');
-        
-        // Hide all publication categories
-        $('.publication-category').hide();
-        
-        // Show the selected category
-        var target = $(this).attr('href');
-        $(target).show();
-      });
-      
-      // Enhanced Google Analytics Tracking
-      // Track publication clicks
-      $('.publication-category .card-title a').on('click', function() {
-        gtag('event', 'publication_click', {
-          event_category: 'engagement',
-          event_label: $(this).text().trim(),
-          value: 1
-        });
-      });
-      
-      // Track resume downloads
-      $('a[href*="resume"], a[href*="cv"]').on('click', function() {
-        gtag('event', 'resume_download', {
-          event_category: 'engagement',
-          event_label: 'resume_pdf',
-          value: 1
-        });
-      });
-      
-      // Track social media clicks
-      $('.hero-social a, .social a, .contact-item a').on('click', function() {
-        var platform = '';
-        if ($(this).find('.fa-linkedin').length) platform = 'linkedin';
-        else if ($(this).find('.fa-github').length) platform = 'github';
-        else if ($(this).find('.fa-graduation-cap').length) platform = 'scholar';
-        else if ($(this).find('.x-icon, .x-icon-contact').length || $(this).hasClass('x-contact') || $(this).find('.x-logo').length) platform = 'x';
-        
-        gtag('event', 'social_click', {
-          event_category: 'engagement',
-          event_label: platform,
-          value: 1
-        });
-      });
-      
-      // Track news link clicks
-      $('.news-item a').on('click', function() {
-        var linkText = $(this).text().trim();
-        gtag('event', 'news_click', {
-          event_category: 'engagement',
-          event_label: linkText,
-          value: 1
-        });
-      });
-      
-
-
-    })
-  </script>
 </body>
-
 </html>
