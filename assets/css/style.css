@@ -11,38 +11,44 @@
   --text-muted: #999;
   --text-heading: #111;
   --text-bio: #333;
-  --link: #1772d0;
-  --link-hover: #0e4d8b;
-  --border: #f0f0f0;
-  --border-section: #ddd;
+  --link: #2e7d32;
+  --link-hover: #1b5e20;
+  --accent: #388e3c;
+  --accent-light: #e8f5e9;
+  --accent-subtle: #c8e6c9;
+  --border: #e8f0e8;
+  --border-section: #a5d6a7;
   --shadow: rgba(0,0,0,0.10);
-  --scrollbar: #ddd;
+  --scrollbar: #a5d6a7;
   --award: #c00;
   --news-text: #444;
-  --footer: #bbb;
-  --toggle-bg: #e8e8e8;
-  --toggle-icon: #333;
+  --footer: #aaa;
+  --toggle-bg: #e8f5e9;
+  --toggle-icon: #2e7d32;
 }
 
 [data-theme="dark"] {
   --bg: #0d1117;
-  --bg-alt: #161b22;
+  --bg-alt: #131d1a;
   --text: #e0e0e0;
   --text-secondary: #b0b0b0;
   --text-muted: #7a7a7a;
   --text-heading: #f0f0f0;
   --text-bio: #c8c8c8;
-  --link: #58a6ff;
-  --link-hover: #79b8ff;
-  --border: #21262d;
-  --border-section: #30363d;
+  --link: #66bb6a;
+  --link-hover: #81c784;
+  --accent: #4caf50;
+  --accent-light: rgba(76,175,80,0.08);
+  --accent-subtle: rgba(76,175,80,0.15);
+  --border: #1a2e1e;
+  --border-section: #2e5232;
   --shadow: rgba(0,0,0,0.35);
-  --scrollbar: #30363d;
+  --scrollbar: #2e5232;
   --award: #ff6b6b;
   --news-text: #b0b0b0;
   --footer: #555;
-  --toggle-bg: #21262d;
-  --toggle-icon: #e0e0e0;
+  --toggle-bg: #1a2e1e;
+  --toggle-icon: #66bb6a;
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -85,6 +91,7 @@ img { max-width: 100%; height: auto; }
 
 .theme-toggle:hover {
   transform: scale(1.1);
+  border-color: var(--accent);
 }
 
 .theme-toggle .icon-sun,
@@ -117,6 +124,7 @@ img { max-width: 100%; height: auto; }
   box-shadow: 0 2px 12px var(--shadow);
   align-self: center;
   margin-top: 20px;
+  border: 3px solid var(--accent-subtle);
 }
 
 .profile-info {
@@ -128,6 +136,9 @@ img { max-width: 100%; height: auto; }
   font-weight: 700;
   color: var(--text-heading);
   margin-bottom: 4px;
+  border-bottom: 3px solid var(--accent);
+  display: inline-block;
+  padding-bottom: 2px;
 }
 
 .profile-links {
@@ -159,15 +170,16 @@ section {
 .section-title {
   font-size: 24px;
   font-weight: 600;
-  color: var(--text-heading);
+  color: var(--accent);
   text-align: center;
   margin: 32px 0 16px;
 }
 
 hr.section-line {
   border: none;
-  border-top: 1px solid var(--border-section);
+  border-top: 2px solid var(--accent);
   margin: 0 0 20px 0;
+  opacity: 0.5;
 }
 
 /* --- News --- */
@@ -223,6 +235,11 @@ hr.section-line {
 
 .pub-list tr:last-child td {
   border-bottom: none;
+}
+
+.pub-list tr:hover td {
+  background: var(--accent-light);
+  transition: background 0.2s ease;
 }
 
 .pub-thumb-cell {
